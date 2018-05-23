@@ -27,8 +27,9 @@ echo '
 .youtube-audio #youtube-audio-progressbar {
 	width:50% ;
 	height:20%;
-	margin-top:2.3%;
+	margin-top:2.4%;
 	background-color:#dbd6d6;
+	display:flex;
 }
 .youtube-audio #youtube-audio-progress {
 	height:100%;
