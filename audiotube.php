@@ -11,6 +11,7 @@ Manually change players skins and theme. Auto Replay, Mute, after and before fun
 Author: Azeez Adewale
 Version: 1.0
 Author URI: https://twitter.com/iamthecarisma
+License: GPLv3 or later
 */ 
 
 # Make sure we don't expose any info if called directly,
