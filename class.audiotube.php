@@ -4,7 +4,7 @@
 class AudioTube {
 	
 	private static $initiated = false;
-	private static enum { one, two } ;
+	private static $skin = 0 ;
 	
 	function init(){
 		if ( ! self::$initiated ) {
