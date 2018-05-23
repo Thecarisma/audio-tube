@@ -10,7 +10,7 @@ Description: Embed Youtube, Vimeo, Dailymotion Videos on your wordpress site as 
 Author: Azeez Adewale
 Version: 1.0
 Author URI: https://twitter.com/iamthecarisma
-License: GPLv3 or later
+License:  LGPL-v3.0 or later
 */ 
 
 # Make sure we don't expose any info if called directly,
