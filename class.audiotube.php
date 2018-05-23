@@ -40,7 +40,11 @@ class AudioTube {
 		</script>' ;
 		#echo '<script src="https://www.youtube.com/player_api"></script>' ;
 
-		if ( ! self::$skin ) {
+		if ( self::$skin == 0) {
+			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.css',__FILE__ ));
+		} else if ( self::$skin == 1 ) {
+			wp_register_style('audiotube-style', plugins_url('/css/blued-audiotube.css',__FILE__ ));
+		} else {
 			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.css',__FILE__ ));
 		}
 		wp_register_script( 'audiotube-script-jquery', plugins_url('/js/jquery.min.js',__FILE__ ));
