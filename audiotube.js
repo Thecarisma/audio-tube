@@ -155,11 +155,11 @@ function createLayout() {
 			};
 		}(i));		
 	} 
-} //onYouTubeIframeAPIReady();
+} onYouTubeIframeAPIReady();
 });
 
 function onYouTubeIframeAPIReady() {
-	for(var i = 0; i < youtubeAudioss.length; i++)
+	/*for(var i = 0; i < youtubeAudioss.length; i++)
 	{ 
 		(function(i) {
 			var position = i ; 
@@ -207,5 +207,5 @@ function onYouTubeIframeAPIReady() {
 				},1000);
 			}
 		}(i)); 
-	}
+	}*/
 }
