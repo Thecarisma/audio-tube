@@ -66,7 +66,7 @@ echo '</style>
 
 
 
-</style>'
+</style>';
 
 }
 
