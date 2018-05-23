@@ -6,7 +6,7 @@
 /*
 Plugin Name: Audio Tube
 Plugin URI: https://github.com/Thecarisma/audio-tube
-Description: This is a custom plugin for harjit to render youtube videos as audios on wordpress pages 
+Description: Embedd Youtube, Vimeo, Dailymotion Videos on your wordpress site as audio with various control, skins and function
 Author: Azeez Adewale
 Version: 1.1
 Author URI: https://twitter.com/iamthecarisma
