@@ -8,8 +8,7 @@
 SKIN
 -----------------------
 0 - classic theme
-1 - blued
-2 - absurd blue red
+1 - elegant
 */
 class AudioTube {
 	
@@ -47,8 +46,6 @@ class AudioTube {
 			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.css',__FILE__ ));
 		} else if ( self::$skin == 1 ) {
 			wp_register_style('audiotube-style', plugins_url('/css/blued-audiotube.css',__FILE__ ));
-		} else if ( self::$skin == 2 ) {
-			wp_register_style('audiotube-style', plugins_url('/css/blue-red-audiotube.css',__FILE__ ));
 		} else {
 			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.css',__FILE__ ));
 		}
