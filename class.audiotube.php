@@ -3,7 +3,7 @@
 
 class AudioTube {
 	
-	private $initiated = false;
+	private static $initiated = false;
 	
 	function init(){
 		if ( ! self::$initiated ) {
