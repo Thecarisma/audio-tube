@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Hello_Dolly
+ * @package audio-tube
  * @version 1.7
  */
 /*
