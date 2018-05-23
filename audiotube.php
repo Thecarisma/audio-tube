@@ -6,7 +6,7 @@
 /*
 Plugin Name: Audio Tube
 Plugin URI: https://github.com/Thecarisma/audio-tube
-Description: Embed Youtube, Vimeo, Dailymotion Videos on your wordpress site as audio with various control, skins and function. Manually change players skins and theme. Auto Replay, Mute, after and before function.
+Description: Embed Youtube, Vimeo, Dailymotion Videos on your wordpress site as audio with various control, skins and function. Manually change players skins and theme. Auto Replay, Mute, after and before function. Open to contribution and features additions.
 Author: Azeez Adewale
 Version: 1.0
 Author URI: https://twitter.com/iamthecarisma
