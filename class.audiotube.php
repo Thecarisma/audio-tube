@@ -1,6 +1,13 @@
 
 <?php
 
+/*
+
+SKIN
+-----------------------
+0 - classic theme
+1 - blued
+*/
 class AudioTube {
 	
 	private static $initiated = false;
