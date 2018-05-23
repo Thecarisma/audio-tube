@@ -3,6 +3,9 @@
 
 class AudioTube {
 	
+	function init(){
+
+	}	
 	
 }
 
