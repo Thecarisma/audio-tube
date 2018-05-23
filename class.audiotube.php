@@ -43,7 +43,7 @@ class AudioTube {
 		#echo '<script src="https://www.youtube.com/player_api"></script>' ;
 
 		if ( self::$skin == 0) {
-			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.css',__FILE__ ));
+			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.css?'.time(),__FILE__ ));
 		} else if ( self::$skin == 1 ) {
 			wp_register_style('audiotube-style', plugins_url('/css/elegant-audiotube.php?'.time(),__FILE__ ));
 		} else {
