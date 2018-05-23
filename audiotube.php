@@ -9,7 +9,7 @@ Plugin URI: https://www.freelancer.com/u/Thecarisma
 Description: This is a custom plugin for harjit to render youtube videos as audios on wordpress pages 
 Author: Azeez Adewale
 Version: 1.1
-Author URI: https://www.freelancer.com/u/Thecarisma
+Author URI: https://twitter.com/iamthecarisma
 */ 
 
 # Make sure we don't expose any info if called directly,
@@ -58,6 +58,6 @@ function fetch_scripts_styles() {
 }
 
 
-add_action('wp_enqueue_scripts', 'fetch_scripts_styles' );
+//add_action('wp_enqueue_scripts', 'fetch_scripts_styles' );
 
 ?>
