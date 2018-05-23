@@ -13,6 +13,12 @@ Author URI: https://twitter.com/iamthecarisma
 License:  LGPL-v3.0 or later
 */ 
 
+/*
+
+
+*/
+
+
 # Make sure we don't expose any info if called directly,
 #this security mechanism is copied from the askimet plugin 
 #https://automattic.com/wordpress-plugins/
