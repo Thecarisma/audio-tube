@@ -12,7 +12,7 @@ Version: 1.1
 Author URI: https://www.freelancer.com/u/Thecarisma
 */ 
 
-// This just echoes the chosen line, we'll position it later
+
 function audiotube() {
 	$play_icon = plugins_url('/images/play-arrow.png', __FILE__); 
 	$pause_icon = plugins_url('/images/pause-button.png', __FILE__); 
@@ -37,6 +37,10 @@ function audiotube() {
 	wp_enqueue_style('audiotube-style');
 	wp_enqueue_script('audiotube-script-jquery'); 
 	wp_enqueue_script('audiotube-script'); 
+	
+}
+
+function fetch_scripts_styles() {
 	
 }
 
