@@ -1,6 +1,9 @@
 
 <?php
 
+
+require_once( AUDIO_TUBE_PLUGIN_DIR . 'css/elegant-audiotube.php' );
+
 /*
 
 
