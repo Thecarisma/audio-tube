@@ -13,7 +13,9 @@ Author URI: https://www.freelancer.com/u/Thecarisma
 */ 
 
 
-
+define( 'AUDIO_TUBE_VERSION', '4.0.3' );
+define( 'AUDIO_TUBE_MINIMUM_WP_VERSION', '4.0' );
+define( 'AUDIO_TUBE_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
 function audiotube() {
 	
