@@ -12,7 +12,9 @@ Version: 1.1
 Author URI: https://www.freelancer.com/u/Thecarisma
 */ 
 
-# Make sure we don't expose any info if called directly
+# Make sure we don't expose any info if called directly,
+#this security mechanism is copied from the askimet plugin 
+#https://automattic.com/wordpress-plugins/
 if ( !function_exists( 'add_action' ) ) {
 	echo 'Hi there!  I\'m just a plugin, not much I can do when called directly.';
 	exit;
