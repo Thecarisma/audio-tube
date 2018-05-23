@@ -18,11 +18,11 @@ echo '
 }
 .audio-tube #audio-tube-currenttime {
 	margin-top:1.21%;
-	margin-right:1%;
+	margin-right:1.5%;
 }
 .audio-tube #audio-tube-duration {
 	margin-top:1.21%;
-	margin-left:1%;
+	margin-left:1.5%;
 }
 .audio-tube #audio-tube-progressbar {
 	width:50% ;
