@@ -17,7 +17,7 @@ var youtubeAudioRepeat = [] ;
 	
 $(window).bind("load", function() {	
 //$(window).load(function() {
-	youtubeAudioss = document.getElementsByClassName("youtube-audio");
+	youtubeAudioss = document.getElementsByClassName("audio-tube");
 	for(var i = 0; i < youtubeAudioss.length; i++)
 	{ 
 		youtubeAud = youtubeAudioss.item(i);
@@ -30,44 +30,44 @@ $(window).bind("load", function() {
 		//the play/pause button
 		var ppb = document.createElement("img");
 		ppb.src = playIcon;
-		ppb.id = "youtube-audio-play" ;
+		ppb.id = "audio-tube-play" ;
 		ppb.className = youtubeAud.id ; 
 		youtubeAudioPPB[i] = ppb ;
 		//current time
 		var timeSpan = document.createElement("span");
-		timeSpan.id = "youtube-audio-currenttime" ;
+		timeSpan.id = "audio-tube-currenttime" ;
 		timeSpan.innerHTML = "00:00:00" ;
 		youtubeAudioTimeSpans[i] = timeSpan ;
 		//progress bar
 		var progressBar = document.createElement("div");
-		progressBar.id = "youtube-audio-progressbar" ;
+		progressBar.id = "audio-tube-progressbar" ;
 		//progress
 		var progress = document.createElement("span");
-		progress.id = "youtube-audio-progress" ;
+		progress.id = "audio-tube-progress" ;
 		youtubeAudioProgress[i] = progress ;
 		youtubeAudioProgressBar[i] = progressBar ;
 		//total time duration
 		var durationSpan = document.createElement("span");
-		durationSpan.id = "youtube-audio-duration" ;
+		durationSpan.id = "audio-tube-duration" ;
 		durationSpan.innerHTML = "00:00:00" ;
 		youtubeAudioDuration[i] = durationSpan ;
 		//the volume button
 		var vb = document.createElement("img");
 		vb.src = unMuteIcon;
-		vb.id = "youtube-audio-volume" ;
+		vb.id = "audio-tube-volume" ;
 		youtubeAudioVB[i] = vb ;
 		//volume bar
 		var volumeBar = document.createElement("div");
-		volumeBar.id = "youtube-audio-volumebar" ;
+		volumeBar.id = "audio-tube-volumebar" ;
 		//volume
 		var volume = document.createElement("span");
-		volume.id = "youtube-audio-volumeprogress" ;
+		volume.id = "audio-tube-volumeprogress" ;
 		youtubeAudioVolume[i] = volume ;
 		youtubeAudioVolumeBar[i] = volumeBar ;
 		//the repeat button
 		var rb = document.createElement("img");
 		rb.src = notRepeatIcon;
-		rb.id = "youtube-audio-repeat" ;
+		rb.id = "audio-tube-repeat" ;
 		youtubeAudioRB[i] = rb ;
 		youtubeAudioRepeat[i] = false ;
 	}
