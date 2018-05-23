@@ -1,9 +1,6 @@
 
 <?php
 
-
-require_once( AUDIO_TUBE_PLUGIN_DIR . 'css/elegant-audiotube.php' );
-
 /*
 
 
@@ -48,13 +45,14 @@ class AudioTube {
 		if ( self::$skin == 0) {
 			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.css',__FILE__ ));
 		} else if ( self::$skin == 1 ) {
-			//echo '<link rel="stylesheet" type="text/css" media="screen" href="'. AUDIO_TUBE_PLUGIN_URL . 'css/elegant-audiotube.php'.'">';
+			wp_register_style('audiotube-style', plugins_url('/css/elegant-audiotube.php',__FILE__ ));
 		} else {
 			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.css',__FILE__ ));
 		}
 		wp_register_script( 'audiotube-script-jquery', plugins_url('/js/jquery.min.js',__FILE__ ));
 		wp_register_script( 'audiotube-script', plugins_url('/js/audiotube.js',__FILE__ ));
 		
+		wp_enqueue_style('audiotube-style');
 		wp_enqueue_script('audiotube-script-jquery'); 
 		wp_enqueue_script('audiotube-script'); 
 	}
