@@ -7,8 +7,12 @@ class AudioTube {
 	
 	function init(){
 		if ( ! self::$initiated ) {
-			self::init_hooks();
+			self::init_audio_tube();
 		}
+	}
+	
+	function init_audio_tube() {
+		add_action('wp_enqueue_scripts', 'fetch_scripts_styles' );
 	}
 
 	function fetch_scripts_styles() {
@@ -36,9 +40,6 @@ class AudioTube {
 		wp_enqueue_script('audiotube-script-jquery'); 
 		//wp_enqueue_script('audiotube-script'); 
 	}
-
-
-add_action('wp_enqueue_scripts', 'fetch_scripts_styles' );
 	
 }
 
