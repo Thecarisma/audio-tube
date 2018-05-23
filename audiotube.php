@@ -24,7 +24,7 @@ if ( !function_exists( 'add_action' ) ) {
 define( 'AUDIO_TUBE_VERSION', '4.0.3' );
 define( 'AUDIO_TUBE_MINIMUM_WP_VERSION', '4.0' );
 define( 'AUDIO_TUBE_PLUGIN_DIR', plugin_dir_path( __FILE__ ) ); 
-define( 'AUDIO_TUBE_PLUGIN_URL', plugin_dir_path( __FILE__ ) ); 
+define( 'AUDIO_TUBE_PLUGIN_URL', plugins_url( __FILE__ ) ); 
 
 require_once( AUDIO_TUBE_PLUGIN_DIR . 'class.audiotube.php' );
 
