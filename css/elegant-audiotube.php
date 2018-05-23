@@ -2,6 +2,8 @@
 
 #header("Content-type: text/css");
 
+function load_css() {
+
 echo '</style>
 .youtube-audio {
 	width:510px ;
@@ -66,6 +68,8 @@ echo '</style>
 
 </style>'
 
+}
 
+add_action( 'admin_head', 'load_css' );
 
 ?>
