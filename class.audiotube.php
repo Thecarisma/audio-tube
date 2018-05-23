@@ -45,7 +45,7 @@ class AudioTube {
 		if ( self::$skin == 0) {
 			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.css',__FILE__ ));
 		} else if ( self::$skin == 1 ) {
-			echo '<link rel="stylesheet" type="text/css" media="screen" href="'.AUDIO_TUBE_PLUGIN_DIR . 'css/elegant-audiotube.php'.'">';
+			echo '<link rel="stylesheet" type="text/css" media="screen" href="'. AUDIO_TUBE_PLUGIN_URL . 'css/elegant-audiotube.php'.'">';
 		} else {
 			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.css',__FILE__ ));
 		}
