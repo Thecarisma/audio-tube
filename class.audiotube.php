@@ -12,7 +12,7 @@ class AudioTube {
 	}
 	
 	function init_audio_tube() {
-		add_action('wp_enqueue_scripts', 'fetch_scripts_styles' );
+		add_action('wp_enqueue_scripts', array( 'AudioTube', 'fetch_scripts_styles' ) );
 	}
 
 	function fetch_scripts_styles() {
