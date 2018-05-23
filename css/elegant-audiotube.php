@@ -1,6 +1,6 @@
 <?php
 
-header("Content-type: text/css");
+#header("Content-type: text/css");
 
 echo '</style>
 .youtube-audio {
