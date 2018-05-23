@@ -30,7 +30,7 @@ class AudioTube {
 			var repeatIcon = "'.$repeat_icon.'" ; 
 			var notRepeatIcon = "'.$not_repeat_icon.'" ; 
 		</script>' ;
-		//echo '<script src="https://www.youtube.com/player_api"></script>' ;
+		#echo '<script src="https://www.youtube.com/player_api"></script>' ;
 
 		wp_register_style('audiotube-style', plugins_url('/audiotube.css',__FILE__ ));
 		wp_register_script( 'audiotube-script-jquery', plugins_url('/jquery.min.js',__FILE__ ));
@@ -38,7 +38,7 @@ class AudioTube {
 		
 		wp_enqueue_style('audiotube-style');
 		wp_enqueue_script('audiotube-script-jquery'); 
-		//wp_enqueue_script('audiotube-script'); 
+		wp_enqueue_script('audiotube-script'); 
 	}
 	
 }
