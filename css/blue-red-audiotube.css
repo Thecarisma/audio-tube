@@ -13,6 +13,7 @@
 .youtube-audio #youtube-audio-currenttime {
 	margin-top:1.21%;
 	margin-right:1%;
+	color:white;
 }
 .youtube-audio #youtube-audio-duration {
 	margin-top:1.21%;
@@ -49,4 +50,9 @@
 	border-radius:20%;
 	background-color:green;
     display:inline-block;
+}
+.youtube-audio #youtube-audio-repeat {
+	width:20px ;
+	height:20px;
+	margin:5px;
 }
