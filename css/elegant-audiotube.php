@@ -2,7 +2,7 @@
 
 #header("Content-type: text/css");
 
-echo '
+echo '</style>
 .youtube-audio {
 	width:510px ;
 	height:30px;
@@ -64,7 +64,7 @@ echo '
 
 
 
-'
+</style>'
 
 
 
