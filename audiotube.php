@@ -1,14 +1,14 @@
 <?php
 /**
  * @package audio-tube
- * @version 1.7
+ * @version 1.0
  */
 /*
 Plugin Name: Audio Tube
 Plugin URI: https://github.com/Thecarisma/audio-tube
-Description: Embedd Youtube, Vimeo, Dailymotion Videos on your wordpress site as audio with various control, skins and function
+Description: Embed Youtube, Vimeo, Dailymotion Videos on your wordpress site as audio with various control, skins and function
 Author: Azeez Adewale
-Version: 1.1
+Version: 1.0
 Author URI: https://twitter.com/iamthecarisma
 */ 
 
