@@ -6,13 +6,13 @@
 SKIN
 -----------------------
 0 - classic theme
-1 - absurd blue red
 1 - blued
+2 - absurd blue red
 */
 class AudioTube {
 	
 	private static $initiated = false;
-	private static $skin = 2 ;
+	private static $skin = 1 ;
 	
 	function init(){
 		if ( ! self::$initiated ) {
