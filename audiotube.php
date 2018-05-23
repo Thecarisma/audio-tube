@@ -5,7 +5,7 @@
  */
 /*
 Plugin Name: Audio Tube
-Plugin URI: https://www.freelancer.com/u/Thecarisma
+Plugin URI: https://github.com/Thecarisma/audio-tube
 Description: This is a custom plugin for harjit to render youtube videos as audios on wordpress pages 
 Author: Azeez Adewale
 Version: 1.1
