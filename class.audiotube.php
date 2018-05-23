@@ -3,8 +3,12 @@
 
 class AudioTube {
 	
+	private $initiated = false;
+	
 	function init(){
-
+		if ( ! self::$initiated ) {
+			self::init_hooks();
+		}
 	}
 
 	function fetch_scripts_styles() {
