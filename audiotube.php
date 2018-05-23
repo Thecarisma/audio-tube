@@ -14,6 +14,11 @@ Author URI: https://www.freelancer.com/u/Thecarisma
 
 
 function audiotube() {
+	
+	
+}
+
+function fetch_scripts_styles() {
 	$play_icon = plugins_url('/images/play-arrow.png', __FILE__); 
 	$pause_icon = plugins_url('/images/pause-button.png', __FILE__); 
 	$mute_icon = plugins_url('/images/volume-off-indicator.png', __FILE__); 
@@ -37,14 +42,9 @@ function audiotube() {
 	wp_enqueue_style('audiotube-style');
 	wp_enqueue_script('audiotube-script-jquery'); 
 	wp_enqueue_script('audiotube-script'); 
-	
-}
-
-function fetch_scripts_styles() {
-	
 }
 
 
-add_action('wp_enqueue_scripts', 'audiotube' );
+add_action('wp_enqueue_scripts', 'fetch_scripts_styles' );
 
 ?>
