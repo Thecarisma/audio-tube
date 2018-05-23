@@ -7,61 +7,60 @@ echo '
 .audio-tube {
 	width:510px ;
 	height:30px;
-	background:#eff0f2 ;
+	background:#A4C639 ;
 	display:flex;
 }
 
 .audio-tube #audio-tube-play {
-	width:13px ;
-	height:13px;
-	margin:1.5%;
+	width:20px ;
+	height:20px;
+	margin:5px;
 }
 .audio-tube #audio-tube-currenttime {
-	margin-top:1.21%;
-	margin-right:1%;
+	margin-top:4px;
+	margin-right:1px;
 }
 .audio-tube #audio-tube-duration {
-	margin-top:1.21%;
-	margin-left:1%;
+	margin-top:4px;
+	margin-left:1px;
 }
 .audio-tube #audio-tube-progressbar {
 	width:50% ;
-	height:20%;
-	margin-top:2.7%;
-	background-color:#dbd6d6;
-	display:flex;
+	height:65%;
+	margin:5px;
+	background-color:brown;
 }
 .audio-tube #audio-tube-progress {
+	width:0%;
 	height:100%;
-	width:100%;
-	background-color:#e87171;
+	background-color:green;
     display:inline-block;
 }
 .audio-tube #audio-tube-volume {
-	width:13px ;
-	height:13px;
-	margin:1.5%;
+	width:20px ;
+	height:20px;
+	margin:5px;
 }
 .audio-tube #audio-tube-volumebar {
-	width:20% ;
-	height:20%;
-	margin-top:2.3%;
+	width:18% ;
+	height:35%;
+	margin-top:10px;
+	margin-right:5px;
 	border-radius:20%;
-	background-color:#ff0000;
-	margin-right:1%;
 	display:flex;
+	background-color:brown;
 }
 .audio-tube #audio-tube-volumeprogress {
-	width:100% ;
+	width:100%;
 	height:100%;
 	border-radius:20%;
-	background-color:#e87171;
+	background-color:green;
     display:inline-block;
 }
 .audio-tube #audio-tube-repeat {
-	width:13px ;
-	height:13px;
-	margin:1.5%;
+	width:20px ;
+	height:20px;
+	margin:5px;
 }
 
 
