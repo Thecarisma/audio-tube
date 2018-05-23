@@ -5,37 +5,37 @@
 	display:flex;
 }
 
-.youtube-audio #youtube-audio-play {
+.audio-tube #audio-tube-play {
 	width:20px ;
 	height:20px;
 	margin:5px;
 }
-.youtube-audio #youtube-audio-currenttime {
+.audio-tube #audio-tube-currenttime {
 	margin-top:4px;
 	margin-right:1px;
 }
-.youtube-audio #youtube-audio-duration {
+.audio-tube #audio-tube-duration {
 	margin-top:4px;
 	margin-left:1px;
 }
-.youtube-audio #youtube-audio-progressbar {
+.audio-tube #audio-tube-progressbar {
 	width:50% ;
 	height:65%;
 	margin:5px;
 	background-color:brown;
 }
-.youtube-audio #youtube-audio-progress {
+.audio-tube #audio-tube-progress {
 	width:0%;
 	height:100%;
 	background-color:green;
     display:inline-block;
 }
-.youtube-audio #youtube-audio-volume {
+.audio-tube #audio-tube-volume {
 	width:20px ;
 	height:20px;
 	margin:5px;
 }
-.youtube-audio #youtube-audio-volumebar {
+.audio-tube #audio-tube-volumebar {
 	width:18% ;
 	height:35%;
 	margin-top:10px;
@@ -44,14 +44,14 @@
 	display:flex;
 	background-color:brown;
 }
-.youtube-audio #youtube-audio-volumeprogress {
+.audio-tube #audio-tube-volumeprogress {
 	width:100%;
 	height:100%;
 	border-radius:20%;
 	background-color:green;
     display:inline-block;
 }
-.youtube-audio #youtube-audio-repeat {
+.audio-tube #audio-tube-repeat {
 	width:20px ;
 	height:20px;
 	margin:5px;
