@@ -32,11 +32,12 @@ class AudioTube {
 		</script>' ;
 		#echo '<script src="https://www.youtube.com/player_api"></script>' ;
 
-		wp_register_style('audiotube-style', plugins_url('/css/audiotube.css',__FILE__ ));
-		wp_register_script( 'audiotube-script', plugins_url('/js/jquery.min.js',__FILE__ ));
+		wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.css',__FILE__ ));
+		wp_register_script( 'audiotube-script-jquery', plugins_url('/js/jquery.min.js',__FILE__ ));
 		wp_register_script( 'audiotube-script', plugins_url('/js/audiotube.js',__FILE__ ));
 		
 		wp_enqueue_style('audiotube-style');
+		wp_enqueue_script('audiotube-script-jquery'); 
 		wp_enqueue_script('audiotube-script'); 
 	}
 	
