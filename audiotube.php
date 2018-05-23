@@ -54,7 +54,7 @@ function fetch_scripts_styles() {
 	
 	wp_enqueue_style('audiotube-style');
 	wp_enqueue_script('audiotube-script-jquery'); 
-	wp_enqueue_script('audiotube-script'); 
+	//wp_enqueue_script('audiotube-script'); 
 }
 
 
