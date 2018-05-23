@@ -32,7 +32,7 @@ echo '
 }
 .youtube-audio #youtube-audio-progress {
 	height:100%;
-	width:50%;
+	width:100%;
 	background-color:#e87171;
     display:inline-block;
 }
