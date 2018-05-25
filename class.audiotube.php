@@ -10,11 +10,17 @@ SKIN
 0 - classic theme
 1 - elegant
 2 - chromic
+
+STYLE
+-----------------------
+1 - justify
+2 - lefty
 */
 class AudioTube {
 	
 	private static $initiated = false;
-	private static $skin = 0 ;
+	private static $skin = 0 ;;
+	private static $player_style = 1 ;
 	
 	function init(){
 		if ( ! self::$initiated ) {
