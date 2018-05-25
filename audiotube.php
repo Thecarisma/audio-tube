@@ -41,10 +41,10 @@ define( 'AUDIO_TUBE_PLUGIN_URL', plugins_url( __FILE__ ) );
 require_once( AUDIO_TUBE_PLUGIN_DIR . 'class.audiotube.php' );
 require_once( AUDIO_TUBE_PLUGIN_DIR . 'settings.audiotube.php' );
 
-add_action( 'init', array( 'AudioTube', 'init' ) );
-
 //register the settings page
 if( is_admin() )
     $my_settings_page = new MySettingsPage();
+
+add_action( 'init', array( 'AudioTube', 'init' ) );
 
 ?>
