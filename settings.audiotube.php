@@ -62,36 +62,20 @@ class MySettingsPage
             'audiotube_options', // Option name
             array( $this, 'sanitize' ) // Sanitize
         );
-		
-		add_settings_section(
-            'audio_tube_skin_option', // ID
-            'Customize the AudioTube player skin and styles', // Title
-            array( $this, 'empty_info' ), // Callback
+
+        add_settings_section(
+            'setting_section_id', // ID
+            'My Custom Settings', // Title
+            array( $this, 'print_section_info' ), // Callback
             'audiotube_settings_admin' // Page
-        );
-		
-		//skin
-		
-        add_settings_field(
-            'classic_skin', // ID
-            'Classic Skin', // Title 
-            array( $this, 'classic_skin_callback' ), // Callback
-            'audiotube_settings_admin', // Page
-            'audio_tube_skin_option' // Section           
         );  
+
         add_settings_field(
-            'elegant_skin', // ID
-            'Elegant Skin', // Title 
-            array( $this, 'elegant_skin_callback' ), // Callback
+            'id_number', // ID
+            'ID Number', // Title 
+            array( $this, 'id_number_callback' ), // Callback
             'audiotube_settings_admin', // Page
-            'audio_tube_skin_option' // Section           
-        );  
-        add_settings_field(
-            'chromic_skin', // ID
-            'Chromic Skin', // Title 
-            array( $this, 'chromic_skin_callback' ), // Callback
-            'audiotube_settings_admin', // Page
-            'audio_tube_skin_option' // Section           
+            'setting_section_id' // Section           
         );      
 
         add_settings_field(
@@ -99,8 +83,8 @@ class MySettingsPage
             'Title', 
             array( $this, 'title_callback' ), 
             'audiotube_settings_admin', 
-            'audio_tube_skin_option'
-        );    
+            'setting_section_id'
+        );      
     }
 
     /**
@@ -127,11 +111,6 @@ class MySettingsPage
     {
         print 'Enter your settings below:';
     }
-	
-	public function empty_info()
-    {
-        
-    }
 
     /** 
      * Get the settings option array and print one of its values
@@ -141,30 +120,6 @@ class MySettingsPage
         printf(
             '<input type="text" id="id_number" name="audiotube_options[id_number]" value="%s" />',
             isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
-        );
-    }
-	
-	public function classic_skin_callback()
-    {
-        printf( 
-            '<input type="radio" id="audiotube_skin" name="audiotube_options[audiotube_skin]" %s />',
-            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin']) == 'classic' ) ? 'checked="checked"' : 'checked="false"'
-        );
-    }
-	
-	public function elegant_skin_callback()
-    {
-        printf( 
-            '<input type="radio" id="audiotube_skin" name="audiotube_options[audiotube_skin]" %s />',
-            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin']) == 'elegant' ) ? 'checked="checked"' : 'checked="false"'
-        );
-    }
-	
-	public function chromic_skin_callback()
-    {
-        printf( 
-            '<input type="radio" id="audiotube_skin" name="audiotube_options[audiotube_skin]" checked="checked" />',
-            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin']) == 'chromic' ) ? 'checked="checked"' : 'checked="false"'
         );
     }
 
