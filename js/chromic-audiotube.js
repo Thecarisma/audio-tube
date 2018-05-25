@@ -166,7 +166,7 @@ function createLayout() {
 			};
 		}(i));		
 	} 
-} //onYouTubeIframeAPIReady();
+} onYouTubeIframeAPIReady();
 });
 
 function onYouTubeIframeAPIReady() {
