@@ -179,6 +179,10 @@ function createStyle2Layout() {
 				}
 			};
 		}(i));
+		//divider
+		var durationSpan = document.createElement("span");
+		durationSpan.id = "audio-tube-divider" ;
+		youtubeAudioDuration[i] = durationSpan ;
 		youtubeAudios[i].appendChild(youtubeAudioVB[i]);
 		(function(i) {
 			var position = i ;
