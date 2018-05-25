@@ -48,8 +48,6 @@ if( is_admin() )
 $myoptions = get_option('my_option_name');
 var_export( $myoptions );
 var_export( $myoptions );
-var_export( $myoptions );
-var_export( $myoptions );
 add_action( 'init', array( 'AudioTube', 'init' ) );
 
 ?>
