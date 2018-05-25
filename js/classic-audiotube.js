@@ -180,9 +180,9 @@ function createStyle2Layout() {
 			};
 		}(i));
 		//divider
-		var durationSpan = document.createElement("span");
-		durationSpan.id = "audio-tube-divider" ;
-		youtubeAudioDuration[i] = durationSpan ;
+		var divider = document.createElement("span");
+		divider.id = "audio-tube-divider" ;
+		youtubeAudios[i].appendChild(divider); 
 		youtubeAudios[i].appendChild(youtubeAudioVB[i]);
 		(function(i) {
 			var position = i ;
