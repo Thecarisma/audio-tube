@@ -21,7 +21,7 @@ echo '
 	margin-right:1.5%;
 }
 .audio-tube #audio-tube-duration {
-	margin-top:1.21%;
+	margin-top:2%;
 	margin-left:1.5%;
 }
 .audio-tube #audio-tube-progressbar {
