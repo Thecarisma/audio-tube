@@ -118,8 +118,8 @@ class MySettingsPage
     public function classic_skin_callback()
     {
         printf(
-            '<input type="radio" id="audiotube_skin" name="audiotube_options[id_number]" value="%s" />',
-            isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
+            '<input type="radio" id="audiotube_skin" name="audiotube_options[audiotube_skin]" value="%s" />',
+            isset( $this->options['audiotube_skin'] ) ? esc_attr( $this->options['audiotube_skin']) : ''
         );
     }
 
