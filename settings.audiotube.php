@@ -71,9 +71,9 @@ class MySettingsPage
         );  
 
         add_settings_field(
-            'id_number', // ID
-            'ID Number', // Title 
-            array( $this, 'id_number_callback' ), // Callback
+            'classic_skin', // ID
+            'Classic Skin', // Title 
+            array( $this, 'classic_skin_callback' ), // Callback
             'audiotube_settings_admin', // Page
             'setting_section_id' // Section           
         );      
@@ -109,7 +109,7 @@ class MySettingsPage
      */
     public function print_section_info()
     {
-        print 'Enter your settings below:';
+        #print 'Enter your settings below:';
     }
 
     /** 
