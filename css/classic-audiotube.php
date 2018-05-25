@@ -9,6 +9,7 @@ echo '
 	height:30px;
 	background:#eff0f2 ;
 	display:flex;
+	margin:10px;
 }
 
 .audio-tube #audio-tube-play {
