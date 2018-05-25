@@ -70,9 +70,7 @@ class MySettingsPage
             'audiotube_settings_admin' // Page
         );
 		
-		print "Your Configuration Preview" ;
 		//preview
-		print "Select Your Skin" ;
 
         add_settings_field(
             'id_number', // ID
