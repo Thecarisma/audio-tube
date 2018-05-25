@@ -41,6 +41,7 @@ echo '
 	width:20px ;
 	height:20px;
 	margin:1%;
+	margin-right:1.5%;
 }
 .audio-tube #audio-tube-volumebar {
 	width:20% ;
