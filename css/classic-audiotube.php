@@ -1,8 +1,9 @@
 <?php
 
-header("Content-type: text/css");
 
 $player_style = $_GET['style'] ;
+
+header("Content-type: text/css");
 
 echo '
 
