@@ -29,6 +29,7 @@ class AudioTube {
 	}
 	
 	function init_audio_tube() {
+		self::$initiated = true;
 		add_action('wp_enqueue_scripts', array( 'AudioTube', 'fetch_scripts_styles' ) );
 	}
 

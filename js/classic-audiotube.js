@@ -71,7 +71,7 @@ $(window).bind("load", function() {
 		youtubeAudioRB[i] = rb ;
 		youtubeAudioRepeat[i] = false ;
 	}
-	createLayout();
+	//createLayout();
 //}
 function createLayout() {
 	//add elements
