@@ -134,7 +134,7 @@ class MySettingsPage
     {
         printf(
             '<input type="text" id="id_number" name="audiotube_options[id_number]" value="%s" />',
-            isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
+            isset( $this->options['is_classic_skin'] ) ? esc_attr( $this->options['id_number']) : ''
         );
     }
 
