@@ -95,8 +95,8 @@ class MySettingsPage
     public function sanitize( $input )
     {
         $new_input = array();
-        if( isset( $input['id_number'] ) )
-            $new_input['id_number'] = absint( $input['id_number'] );
+        if( isset( $input['audiotube_skin'] ) )
+            $new_input['audiotube_skin'] = absint( $input['audiotube_skin'] );
 
         if( isset( $input['title'] ) )
             $new_input['title'] = sanitize_text_field( $input['title'] );
