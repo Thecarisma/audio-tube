@@ -20,7 +20,7 @@ class AudioTube {
 	
 	private static $initiated = false;
 	private static $skin = 0 ;
-	private static $player_style = 1 ;
+	private static $player_style = "1" ;
 	
 	function init(){
 		if ( ! self::$initiated ) {
@@ -48,8 +48,8 @@ class AudioTube {
 			var repeatIcon = "'.$repeat_icon.'" ; 
 			var notRepeatIcon = "'.$not_repeat_icon.'" ; 
 			
-			var playerSkin = '.$skin.' ; 
-			var playerStyle = '.$player_style.' ; 
+			var playerSkin = "'.$skin.'" ; 
+			var playerStyle = "'.$player_style.'" ; 
 		</script>' ;
 		#echo '<script src="https://www.youtube.com/player_api"></script>' ;
 
