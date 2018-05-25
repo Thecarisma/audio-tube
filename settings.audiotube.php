@@ -70,21 +70,9 @@ class MySettingsPage
             'audiotube_settings_admin' // Page
         );
 		
-		add_settings_section(
-            'audio_tube_preview_option', // ID
-            'Your Configuration Preview', // Title
-            array( $this, 'empty_info' ), // Callback
-            'audiotube_settings_admin' // Page
-        ); 
-		
+		print "Your Configuration Preview" ;
 		//preview
-
-        add_settings_section(
-            'audio_tube_skin_option', // ID
-            'Select Your Skin', // Title
-            array( $this, 'empty_info' ), // Callback
-            'audiotube_settings_admin' // Page
-        );  
+		print "Select Your Skin" ;
 
         add_settings_field(
             'id_number', // ID
