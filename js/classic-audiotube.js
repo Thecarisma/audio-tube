@@ -189,7 +189,7 @@ function createStyle2Layout() {
 			var position = i ;
 			youtubeAudioVB[i].onclick = function () {
 				if (this.src.endsWith(unMuteIcon)) {
-					this.src = muteIcon ; this.src.marginRight = "2%" ;
+					this.src = muteIcon ; this.src.marginRight = "100" ;
 					youtubePlayers[position].mute();
 				} else {
 					this.src = unMuteIcon ;
