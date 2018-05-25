@@ -70,6 +70,13 @@ class MySettingsPage
             'audiotube_settings_admin' // Page
         );
 		
+		add_settings_section(
+            'audio_tube_skin_option', // ID
+            'Customize the AudioTube player skin and styles', // Title
+            array( $this, 'print_section_info' ), // Callback
+            'audiotube_settings_admin' // Page
+        );
+		
 		//preview
 
         add_settings_field(
