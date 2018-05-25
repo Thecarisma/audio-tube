@@ -4,7 +4,7 @@ class MySettingsPage
     /**
      * Holds the values to be used in the fields callbacks
      */
-    public static $options;
+    private $options;
 
     /**
      * Start up
