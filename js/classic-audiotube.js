@@ -209,8 +209,9 @@ function createStyle2Layout() {
 				}
 			};
 		}(i));		
-		youtubeAudios[i].appendChild(youtubeIPlayer[i]);
 		youtubeAudios[i].appendChild(youtubeAudioTimeSpans[i]);
+		youtubeAudios[i].appendChild(youtubeAudioDuration[i]);
+		youtubeAudios[i].appendChild(youtubeIPlayer[i]);
 		youtubeAudioProgressBar[i].appendChild(youtubeAudioProgress[i]);
 		youtubeAudios[i].appendChild(youtubeAudioProgressBar[i]);
 		(function(i) {
@@ -223,7 +224,6 @@ function createStyle2Layout() {
 				}
 			};
 		}(i));
-		youtubeAudios[i].appendChild(youtubeAudioDuration[i]);
 		youtubeAudioVolumeBar[i].appendChild(youtubeAudioVolume[i]);
 		youtubeAudios[i].appendChild(youtubeAudioVolumeBar[i]);
 		(function(i) {
