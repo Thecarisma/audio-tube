@@ -16,7 +16,6 @@ var youtubeIPlayer = [] ;
 var youtubeAudioRepeat = [] ;
 	
 $(window).bind("load", function() {	
-//$(window).load(function() {
 	youtubeAudioss = document.getElementsByClassName("audio-tube");
 	for(var i = 0; i < youtubeAudioss.length; i++)
 	{ 
@@ -76,7 +75,9 @@ $(window).bind("load", function() {
 	} else if (playerStyle == 2) {
 		alert("no style 2 yet");
 	}
-//}
+	onYouTubeIframeAPIReady();
+});
+
 function createStyle1Layout() {
 	//add elements
 	for(var i = 0; i < youtubeAudioss.length; i++)
@@ -159,8 +160,7 @@ function createStyle1Layout() {
 			};
 		}(i));		
 	} 
-} onYouTubeIframeAPIReady();
-});
+}
 
 function onYouTubeIframeAPIReady() {
 	/*for(var i = 0; i < youtubeAudioss.length; i++)
