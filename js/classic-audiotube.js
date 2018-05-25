@@ -203,6 +203,7 @@ function createStyle2Layout() {
 		divider.id = "audio-tube-divider" ;
 		youtubeAudios[i].appendChild(divider); 
 		//repeat button
+		youtubeAudioRB[i].marginRight = "2%" ;
 		youtubeAudios[i].appendChild(youtubeAudioRB[i]);
 		(function(i) {
 			var position = i ;

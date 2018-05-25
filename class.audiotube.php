@@ -20,7 +20,7 @@ class AudioTube {
 	
 	private static $initiated = false;
 	private static $skin = 0 ;
-	private static $player_style = 1 ;
+	private static $player_style = 2 ;
 	
 	function init(){
 		if ( ! self::$initiated ) {
