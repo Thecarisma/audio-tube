@@ -44,7 +44,7 @@ class MySettingsPage
             <?php
                 // This prints out all hidden setting fields
                 settings_fields( 'audiotube_option_group' );
-                do_settings_sections( 'my-setting-admin' );
+                do_settings_sections( 'audiotube_settings_admin' );
                 submit_button();
             ?>
             </form>
@@ -67,14 +67,14 @@ class MySettingsPage
             'setting_section_id', // ID
             'My Custom Settings', // Title
             array( $this, 'print_section_info' ), // Callback
-            'my-setting-admin' // Page
+            'audiotube_settings_admin' // Page
         );  
 
         add_settings_field(
             'id_number', // ID
             'ID Number', // Title 
             array( $this, 'id_number_callback' ), // Callback
-            'my-setting-admin', // Page
+            'audiotube_settings_admin', // Page
             'setting_section_id' // Section           
         );      
 
@@ -82,7 +82,7 @@ class MySettingsPage
             'title', 
             'Title', 
             array( $this, 'title_callback' ), 
-            'my-setting-admin', 
+            'audiotube_settings_admin', 
             'setting_section_id'
         );      
     }
