@@ -73,9 +73,12 @@ $(window).bind("load", function() {
 	if (playerStyle == 1) {
 		createStyle1Layout();
 	} else if (playerStyle == 2) {
-		createStyle2Layout();
+		alert('no style 2 yet') ;// createStyle2Layout();
 	}
-function createLayout() {
+	onYouTubeIframeAPIReady();
+});
+
+function createStyle1Layout() {
 	//add elements
 	for(var i = 0; i < youtubeAudioss.length; i++)
 	{ 
@@ -157,8 +160,7 @@ function createLayout() {
 			};
 		}(i));		
 	} 
-} onYouTubeIframeAPIReady();
-});
+}
 
 function onYouTubeIframeAPIReady() {
 	/*for(var i = 0; i < youtubeAudioss.length; i++)
