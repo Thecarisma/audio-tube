@@ -25,7 +25,7 @@ class MySettingsPage
             'Settings Admin', 
             'Audiotube', 
             'manage_options', 
-            'my-setting-admin', 
+            'audiotube-settings', 
             array( $this, 'create_admin_page' )
         );
     }
