@@ -46,7 +46,7 @@ if( is_admin() )
     $my_settings_page = new MySettingsPage();
 
 $myoptions = get_option('my_option_name');
-var_export( $myoptions );
+echo( "							"+$myoptions );
 add_action( 'init', array( 'AudioTube', 'init' ) );
 
 ?>
