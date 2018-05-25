@@ -75,21 +75,21 @@ class MySettingsPage
         add_settings_field(
             'classic_skin', // ID
             'Classic Skin', // Title 
-            array( $this, 'classic_skin_callback' ), // Callback
+            array( $this, 'skin_callback' ), // Callback
             'audiotube_settings_admin', // Page
             'audio_tube_skin_option' // Section           
         );  
         add_settings_field(
             'elegant_skin', // ID
             'Elegant Skin', // Title 
-            array( $this, 'elegant_skin_callback' ), // Callback
+            array( $this, 'skin_callback' ), // Callback
             'audiotube_settings_admin', // Page
             'audio_tube_skin_option' // Section           
         );  
         add_settings_field(
             'chromic_skin', // ID
             'Chromic Skin', // Title 
-            array( $this, 'elegant_skin_callback' ), // Callback
+            array( $this, 'skin_callback' ), // Callback
             'audiotube_settings_admin', // Page
             'audio_tube_skin_option' // Section           
         );      
@@ -144,7 +144,7 @@ class MySettingsPage
         );
     }
 	
-	public function classic_skin_callback()
+	public function skin_callback()
     {
         printf( 
             '<input type="radio" id="is_classic_skin" name="audiotube_options[is_classic_skin]" %s />',
