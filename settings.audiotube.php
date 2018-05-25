@@ -39,7 +39,7 @@ class MySettingsPage
         $this->options = get_option( 'my_option_name' );
         ?>
         <div class="wrap">
-            <h1>My Settings</h1>
+            <h1>AudioTube Settings</h1>
             <form method="post" action="options.php">
             <?php
                 // This prints out all hidden setting fields
