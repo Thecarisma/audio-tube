@@ -2,6 +2,8 @@
 
 header("Content-type: text/css");
 
+#style 2 variables
+
 echo '
 
 .audio-tube {
