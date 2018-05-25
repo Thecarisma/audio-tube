@@ -200,8 +200,8 @@ function createStyle2Layout() {
 		//divider
 		var divider = document.createElement("span");
 		divider.id = "audio-tube-divider" ;
-		divider.marginLeft = "12%" ;
-		divider.marginRight = "52%" ;
+		divider.marginLeft = "2%" ;
+		divider.marginRight = "2%" ;
 		youtubeAudios[i].appendChild(divider); 
 		//repeat button
 		youtubeAudios[i].appendChild(youtubeAudioRB[i]);
