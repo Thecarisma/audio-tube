@@ -94,13 +94,13 @@ class MySettingsPage
             'audio_tube_skin_option' // Section           
         );      
 
-        /**add_settings_field(
+        add_settings_field(
             'title', 
             'Title', 
             array( $this, 'title_callback' ), 
             'audiotube_settings_admin', 
             'audio_tube_skin_option'
-        ); **/     
+        );    
     }
 
     /**
@@ -163,7 +163,7 @@ class MySettingsPage
 	public function chromic_skin_callback()
     {
         printf( 
-            '<input type="radio" id="audiotube_skin" name="audiotube_options[audiotube_skin]" %s />',
+            '<input type="radio" id="audiotube_skin" name="audiotube_options[audiotube_skin]" checked="checked" />',
             (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin']) == 'chromic' ) ? 'checked="checked"' : 'checked="false"'
         );
     }
