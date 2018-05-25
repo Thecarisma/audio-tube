@@ -71,10 +71,12 @@ $(window).bind("load", function() {
 		youtubeAudioRB[i] = rb ;
 		youtubeAudioRepeat[i] = false ;
 	}
-	alert('player style : '+playerStyle+' | player skin : '+playerSkin);
+	if (playerStyle == 1) {
+		
+	}
 	//createLayout();
 //}
-function createLayout() {
+function createStyle1Layout() {
 	//add elements
 	for(var i = 0; i < youtubeAudioss.length; i++)
 	{ 
