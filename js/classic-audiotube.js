@@ -184,7 +184,7 @@ function createStyle2Layout() {
 		divider.id = "audio-tube-divider" ;
 		youtubeAudios[i].appendChild(divider); 
 		//volume button
-		youtubeAudioVB[i].className = "margin-right-2" ;
+		youtubeAudioVB[i].className = "margin-right" ;
 		youtubeAudios[i].appendChild(youtubeAudioVB[i]);
 		(function(i) {
 			var position = i ;

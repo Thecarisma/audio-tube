@@ -73,8 +73,8 @@ echo '
 	margin-right:4%;
 }
 
-.margin-right-2 {
-	margin-right:2%;
+.margin-right {
+	margin-right:100px;
 }
 
 ' ;
