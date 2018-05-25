@@ -227,6 +227,7 @@ function createStyle2Layout() {
 		youtubeAudios[i].appendChild(youtubeAudioTimeSpans[i]);
 		youtubeAudios[i].appendChild(youtubeAudioDuration[i]);
 		youtubeAudios[i].appendChild(youtubeIPlayer[i]);
+		youtubeAudioProgressBar[i].className = "sided" ;
 		youtubeAudioProgressBar[i].appendChild(youtubeAudioProgress[i]);
 		youtubeAudios[i].appendChild(youtubeAudioProgressBar[i]);
 		(function(i) {
