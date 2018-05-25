@@ -73,7 +73,7 @@ $(window).bind("load", function() {
 	if (playerStyle == 1) {
 		createStyle1Layout();
 	} else if (playerStyle == 2) {
-		alert('no style 2 yet') ;// createStyle2Layout();
+		// createStyle2Layout();
 	}
 	onYouTubeIframeAPIReady();
 });
