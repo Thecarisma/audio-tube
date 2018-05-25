@@ -70,8 +70,8 @@ class MySettingsPage
             'audiotube_settings_admin' // Page
         );
 		
-		//preview
-
+		//skin
+		$this->options['audiotube_skin']) = 'classic' ;
         add_settings_field(
             'classic_skin', // ID
             'Classic Skin', // Title 
