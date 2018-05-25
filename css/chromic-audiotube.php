@@ -39,7 +39,7 @@ echo '
 	display:flex;
 }
 .audio-tube #audio-tube-progress {
-	height:100%;
+	height:0%;
 	width:100%;
 	background-color:#e87171;
     display:inline-block;
