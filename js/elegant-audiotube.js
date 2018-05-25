@@ -16,7 +16,6 @@ var youtubeIPlayer = [] ;
 var youtubeAudioRepeat = [] ;
 	
 $(window).bind("load", function() {	
-//$(window).load(function() {
 	youtubeAudioss = document.getElementsByClassName("audio-tube");
 	for(var i = 0; i < youtubeAudioss.length; i++)
 	{ 
@@ -71,8 +70,11 @@ $(window).bind("load", function() {
 		youtubeAudioRB[i] = rb ;
 		youtubeAudioRepeat[i] = false ;
 	}
-	createLayout();
-//}
+	if (playerStyle == 1) {
+		createStyle1Layout();
+	} else if (playerStyle == 2) {
+		createStyle2Layout();
+	}
 function createLayout() {
 	//add elements
 	for(var i = 0; i < youtubeAudioss.length; i++)
