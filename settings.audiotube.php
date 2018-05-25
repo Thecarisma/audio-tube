@@ -36,7 +36,7 @@ class MySettingsPage
     public function create_admin_page()
     {
         // Set class property
-        $this->options = get_option( 'my_option_name' );
+        $this->options = get_option( 'audiotube_options' );
         ?>
         <div class="wrap">
             <h1>AudioTube Settings</h1>
