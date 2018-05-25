@@ -78,13 +78,13 @@ class MySettingsPage
             'setting_section_id' // Section           
         );      
 
-        add_settings_field(
+        /**add_settings_field(
             'title', 
             'Title', 
             array( $this, 'title_callback' ), 
             'audiotube_settings_admin', 
             'setting_section_id'
-        );      
+        ); **/     
     }
 
     /**
