@@ -64,14 +64,14 @@ class MySettingsPage
         );
 		
 		add_settings_section(
-            'setting_section_id', // ID
+            'audio_tube_preview_option', // ID
             'Customize the AudioTube player skin and styles', // Title
             array( $this, 'print_section_info' ), // Callback
             'audiotube_settings_admin' // Page
         ); 
 
         add_settings_section(
-            'skin_option', // ID
+            'audio_tube_skin_option', // ID
             'Customize the AudioTube player skin and styles', // Title
             array( $this, 'print_section_info' ), // Callback
             'audiotube_settings_admin' // Page
@@ -82,7 +82,7 @@ class MySettingsPage
             'ID Number', // Title 
             array( $this, 'id_number_callback' ), // Callback
             'audiotube_settings_admin', // Page
-            'setting_section_id' // Section           
+            'audio_tube_skin_option' // Section           
         );      
 
         /**add_settings_field(
@@ -90,7 +90,7 @@ class MySettingsPage
             'Title', 
             array( $this, 'title_callback' ), 
             'audiotube_settings_admin', 
-            'setting_section_id'
+            'audio_tube_skin_option'
         ); **/     
     }
 
