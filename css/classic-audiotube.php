@@ -41,7 +41,6 @@ echo '
 	width:20px ;
 	height:20px;
 	margin:1%;
-	margin-right:2%;
 }
 .audio-tube #audio-tube-volumebar {
 	width:20% ;
@@ -61,7 +60,6 @@ echo '
 	width:20px ;
 	height:20px;
 	margin:1%;
-	margin-right:2%;
 }
 .audio-tube #audio-tube-divider {
 	height:70%;
