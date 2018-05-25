@@ -2,7 +2,7 @@
 
 header("Content-type: text/css");
 
-$player_style = $_GET['phpinfo'] ;
+$player_style = $_GET['style'] ;
 
 echo '
 
