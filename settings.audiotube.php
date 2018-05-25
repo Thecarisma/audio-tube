@@ -163,7 +163,7 @@ class MySettingsPage
 	public function chromic_skin_callback()
     {
         printf( 
-            '<input type="radio" id="audiotube_skin" name="audiotube_options[audiotube_skin]" %s />',
+            '<input type="radio" id="audiotube_skin" name="audiotube_options[audiotube_skin]"  />',
             (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin']) == 'chromic' ) ? 'checked="checked"' : 'checked="false"'
         );
     }
