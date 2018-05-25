@@ -166,11 +166,11 @@ function createLayout() {
 			};
 		}(i));		
 	} 
-} onYouTubeIframeAPIReady();
+} //onYouTubeIframeAPIReady();
 });
 
 function onYouTubeIframeAPIReady() {
-	/*for(var i = 0; i < youtubeAudioss.length; i++)
+	for(var i = 0; i < youtubeAudioss.length; i++)
 	{ 
 		(function(i) {
 			var position = i ; 
@@ -184,6 +184,7 @@ function onYouTubeIframeAPIReady() {
 					var date = new Date(null); date.setSeconds(e.target.getDuration()); 
 					var audioDuration = date.toISOString().substr(11, 8);
 					youtubeAudioDuration[position].innerHTML = audioDuration ; 
+					initProgressTimer(position);
 				},
 				"onStateChange": function(e) {
 					var value = 0;
@@ -198,25 +199,31 @@ function onYouTubeIframeAPIReady() {
 			}
 		  });
 	  }(i));
-	  //dynamically load the progress and time in timer
-		(function(i) {
-			var position = i ;
-			if(typeof youtubePlayers[position] != "undefined" ){
-				var downloadTimer = setInterval(function(){
-					var value = 0;
-					if (youtubePlayers[position].getCurrentTime() > 0) {
-						value = Math.floor((100 / youtubePlayers[position].getDuration()) * youtubePlayers[position].getCurrentTime());
-					}
-					youtubeAudioProgress[position].style.width = value + "%"; 
-					youtubeAudioProgress[position].style.width = value + "%"; 
-					var date = new Date(null); date.setSeconds(youtubePlayers[position].getCurrentTime()); 
-					var audioDuration = date.toISOString().substr(11, 8);
-					youtubeAudioTimeSpans[position].innerHTML = audioDuration ;
-					if (value>=99 && youtubeAudioRepeat[position] == true ) {
-						youtubePlayers[position].seekTo(0);
-					}
-				},1000);
-			}
-		}(i)); 
-	}*/
+		
+	}
+}
+
+/**
+	dynamically load the progress and time in timer
+**/
+function initProgressTimer(i) {
+	(function(i) {
+		var position = i ;
+		if(typeof youtubePlayers[position] != "undefined" ){
+			var downloadTimer = setInterval(function(){
+				var value = 0;
+				if (youtubePlayers[position].getCurrentTime() > 0) {
+					value = Math.floor((100 / youtubePlayers[position].getDuration()) * youtubePlayers[position].getCurrentTime());
+				}
+				youtubeAudioProgress[position].style.width = value + "%"; 
+				youtubeAudioProgress[position].style.width = value + "%"; 
+				var date = new Date(null); date.setSeconds(youtubePlayers[position].getCurrentTime()); 
+				var audioDuration = date.toISOString().substr(11, 8);
+				youtubeAudioTimeSpans[position].innerHTML = audioDuration ;
+				if (value>=99 && youtubeAudioRepeat[position] == true ) {
+					youtubePlayers[position].seekTo(0);
+				}
+			},1000);
+		}
+	}(i)); 
 }

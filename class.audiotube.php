@@ -14,7 +14,7 @@ SKIN
 class AudioTube {
 	
 	private static $initiated = false;
-	private static $skin = 2 ;
+	private static $skin = 0 ;
 	
 	function init(){
 		if ( ! self::$initiated ) {
