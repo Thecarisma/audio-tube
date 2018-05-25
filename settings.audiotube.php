@@ -43,7 +43,7 @@ class MySettingsPage
             <form method="post" action="options.php">
             <?php
                 // This prints out all hidden setting fields
-                settings_fields( 'my_option_group' );
+                settings_fields( 'audiotube_option_group' );
                 do_settings_sections( 'my-setting-admin' );
                 submit_button();
             ?>
@@ -58,8 +58,8 @@ class MySettingsPage
     public function page_init()
     {        
         register_setting(
-            'my_option_group', // Option group
-            'my_option_name', // Option name
+            'audiotube_option_group', // Option group
+            'audiotube_options', // Option name
             array( $this, 'sanitize' ) // Sanitize
         );
 
@@ -118,7 +118,7 @@ class MySettingsPage
     public function id_number_callback()
     {
         printf(
-            '<input type="text" id="id_number" name="my_option_name[id_number]" value="%s" />',
+            '<input type="text" id="id_number" name="audiotube_options[id_number]" value="%s" />',
             isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
         );
     }
@@ -129,7 +129,7 @@ class MySettingsPage
     public function title_callback()
     {
         printf(
-            '<input type="text" id="title" name="my_option_name[title]" value="%s" />',
+            '<input type="text" id="title" name="audiotube_options[title]" value="%s" />',
             isset( $this->options['title'] ) ? esc_attr( $this->options['title']) : ''
         );
     }
