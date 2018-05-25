@@ -227,6 +227,11 @@ function createStyle2Layout() {
 		youtubeAudios[i].appendChild(divider); 
 		//time 
 		youtubeAudios[i].appendChild(youtubeAudioTimeSpans[i]);
+		//time slash
+		var timeSlash = document.createElement("span");
+		timeSlash.id = "audio-tube-currenttime" ;
+		timeSlash.innerHTML = "/" ;
+		youtubeAudios[i].appendChild(timeSlash);
 		youtubeAudios[i].appendChild(youtubeAudioDuration[i]);
 		youtubeAudios[i].appendChild(youtubeIPlayer[i]);
 		youtubeAudioProgressBar[i].className = "sided" ;
