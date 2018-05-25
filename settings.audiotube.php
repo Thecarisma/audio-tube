@@ -79,8 +79,8 @@ class MySettingsPage
 
         add_settings_section(
             'audio_tube_skin_option', // ID
-            'Customize the AudioTube player skin and styles', // Title
-            array( $this, 'select_skin_info' ), // Callback
+            'Select Your Skin', // Title
+            array( $this, 'empty_info' ), // Callback
             'audiotube_settings_admin' // Page
         );  
 
