@@ -23,7 +23,7 @@ class MySettingsPage
         // This page will be under "Settings"
         add_options_page(
             'Settings Admin', 
-            'My Settings', 
+            'Audiotube', 
             'manage_options', 
             'my-setting-admin', 
             array( $this, 'create_admin_page' )
