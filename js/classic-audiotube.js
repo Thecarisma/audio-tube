@@ -179,21 +179,6 @@ function createStyle2Layout() {
 				}
 			};
 		}(i));
-		youtubeAudios[i].appendChild(youtubeIPlayer[i]);
-		youtubeAudios[i].appendChild(youtubeAudioTimeSpans[i]);
-		youtubeAudioProgressBar[i].appendChild(youtubeAudioProgress[i]);
-		youtubeAudios[i].appendChild(youtubeAudioProgressBar[i]);
-		(function(i) {
-			var position = i ;
-			youtubeAudioProgressBar[i].onclick = function (e) {
-				var percent = (e.offsetX / this.offsetWidth) * youtubePlayers[position].getDuration() ;
-				youtubePlayers[position].seekTo(percent);
-				if (youtubeAudioPPB[position].src.endsWith(playIcon) ) {
-					youtubeAudioPPB[position].src = pauseIcon ;
-				}
-			};
-		}(i));
-		youtubeAudios[i].appendChild(youtubeAudioDuration[i]);
 		youtubeAudios[i].appendChild(youtubeAudioVB[i]);
 		(function(i) {
 			var position = i ;
@@ -205,25 +190,6 @@ function createStyle2Layout() {
 					this.src = unMuteIcon ;
 					youtubePlayers[position].unMute();
 				}
-			};
-		}(i));
-		youtubeAudioVolumeBar[i].appendChild(youtubeAudioVolume[i]);
-		youtubeAudios[i].appendChild(youtubeAudioVolumeBar[i]);
-		(function(i) {
-			var position = i ;
-			youtubeAudioVolumeBar[i].onclick = function (e) {
-				var percent = (e.offsetX / this.offsetWidth) * 100 ; 
-				youtubePlayers[position].setVolume(percent);
-				if ( percent <= 0 ) {
-					youtubeAudioVB[position].src = muteIcon ;
-				} else {
-					youtubeAudioVB[position].src = unMuteIcon ;
-				}
-				var value = 0;
-				if (percent > 0) {
-					value = Math.floor((100 / 100) * percent);
-				}
-				youtubeAudioVolume[position].style.width = value + "%"; console.log(value + "%");
 			};
 		}(i));	
 		youtubeAudios[i].appendChild(youtubeAudioRB[i]);
@@ -243,6 +209,40 @@ function createStyle2Layout() {
 				}
 			};
 		}(i));		
+		youtubeAudios[i].appendChild(youtubeIPlayer[i]);
+		youtubeAudios[i].appendChild(youtubeAudioTimeSpans[i]);
+		youtubeAudioProgressBar[i].appendChild(youtubeAudioProgress[i]);
+		youtubeAudios[i].appendChild(youtubeAudioProgressBar[i]);
+		(function(i) {
+			var position = i ;
+			youtubeAudioProgressBar[i].onclick = function (e) {
+				var percent = (e.offsetX / this.offsetWidth) * youtubePlayers[position].getDuration() ;
+				youtubePlayers[position].seekTo(percent);
+				if (youtubeAudioPPB[position].src.endsWith(playIcon) ) {
+					youtubeAudioPPB[position].src = pauseIcon ;
+				}
+			};
+		}(i));
+		youtubeAudios[i].appendChild(youtubeAudioDuration[i]);
+		youtubeAudioVolumeBar[i].appendChild(youtubeAudioVolume[i]);
+		youtubeAudios[i].appendChild(youtubeAudioVolumeBar[i]);
+		(function(i) {
+			var position = i ;
+			youtubeAudioVolumeBar[i].onclick = function (e) {
+				var percent = (e.offsetX / this.offsetWidth) * 100 ; 
+				youtubePlayers[position].setVolume(percent);
+				if ( percent <= 0 ) {
+					youtubeAudioVB[position].src = muteIcon ;
+				} else {
+					youtubeAudioVB[position].src = unMuteIcon ;
+				}
+				var value = 0;
+				if (percent > 0) {
+					value = Math.floor((100 / 100) * percent);
+				}
+				youtubeAudioVolume[position].style.width = value + "%"; console.log(value + "%");
+			};
+		}(i));
 	} 
 }
 
