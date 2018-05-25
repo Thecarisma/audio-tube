@@ -74,7 +74,7 @@ echo '
 }
 
 .margin-right-2 {
-	
+	margin-right:2%;
 }
 
 ' ;
