@@ -62,9 +62,16 @@ class MySettingsPage
             'audiotube_options', // Option name
             array( $this, 'sanitize' ) // Sanitize
         );
+		
+		add_settings_section(
+            'setting_section_id', // ID
+            'Customize the AudioTube player skin and styles', // Title
+            array( $this, 'print_section_info' ), // Callback
+            'audiotube_settings_admin' // Page
+        ); 
 
         add_settings_section(
-            'setting_section_id', // ID
+            'skin_option', // ID
             'Customize the AudioTube player skin and styles', // Title
             array( $this, 'print_section_info' ), // Callback
             'audiotube_settings_admin' // Page
