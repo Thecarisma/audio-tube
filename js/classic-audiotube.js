@@ -184,7 +184,7 @@ function createStyle2Layout() {
 		divider.id = "audio-tube-divider" ;
 		youtubeAudios[i].appendChild(divider); 
 		//volume button
-		youtubeAudioVB[i].marginRight = "2%" ;
+		youtubeAudioVB[i].marginLeft = "2%" ;
 		youtubeAudios[i].appendChild(youtubeAudioVB[i]);
 		(function(i) {
 			var position = i ;
@@ -203,7 +203,7 @@ function createStyle2Layout() {
 		divider.id = "audio-tube-divider" ;
 		youtubeAudios[i].appendChild(divider); 
 		//repeat button
-		youtubeAudioRB[i].marginRight = "2%" ;
+		youtubeAudioRB[i].marginLeft = "2%" ;
 		youtubeAudios[i].appendChild(youtubeAudioRB[i]);
 		(function(i) {
 			var position = i ;
