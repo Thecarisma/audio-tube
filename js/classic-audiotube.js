@@ -183,6 +183,7 @@ function createStyle2Layout() {
 		var divider = document.createElement("span");
 		divider.id = "audio-tube-divider" ;
 		youtubeAudios[i].appendChild(divider); 
+		//volume button
 		youtubeAudios[i].appendChild(youtubeAudioVB[i]);
 		(function(i) {
 			var position = i ;
@@ -196,6 +197,11 @@ function createStyle2Layout() {
 				}
 			};
 		}(i));	
+		//divider
+		var divider = document.createElement("span");
+		divider.id = "audio-tube-divider" ;
+		youtubeAudios[i].appendChild(divider); 
+		//repeat button
 		youtubeAudios[i].appendChild(youtubeAudioRB[i]);
 		(function(i) {
 			var position = i ;
