@@ -115,10 +115,10 @@ class MySettingsPage
     /** 
      * Get the settings option array and print one of its values
      */
-    public function id_number_callback()
+    public function classic_skin_callback()
     {
         printf(
-            '<input type="text" id="id_number" name="audiotube_options[id_number]" value="%s" />',
+            '<input type="radio" id="audiotube_skin" name="audiotube_options[id_number]" value="%s" />',
             isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
         );
     }
