@@ -224,7 +224,7 @@ function createStyle2Layout() {
 				}
 			};
 		}(i));
-		youtubeAudioVolumeBar[i].appendChild(youtubeAudioVolume[i]);
+		/**youtubeAudioVolumeBar[i].appendChild(youtubeAudioVolume[i]);
 		youtubeAudios[i].appendChild(youtubeAudioVolumeBar[i]);
 		(function(i) {
 			var position = i ;
@@ -242,7 +242,7 @@ function createStyle2Layout() {
 				}
 				youtubeAudioVolume[position].style.width = value + "%"; console.log(value + "%");
 			};
-		}(i));
+		}(i));**/
 	} 
 }
 
