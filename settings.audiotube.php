@@ -73,9 +73,9 @@ class MySettingsPage
 		//preview
 
         add_settings_field(
-            'id_number', // ID
-            'ID Number', // Title 
-            array( $this, 'id_number_callback' ), // Callback
+            'classic_skin', // ID
+            'Classic Skin', // Title 
+            array( $this, 'classic_skin_callback' ), // Callback
             'audiotube_settings_admin', // Page
             'audio_tube_skin_option' // Section           
         );      
