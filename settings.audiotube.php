@@ -116,10 +116,10 @@ class MySettingsPage
      * Get the settings option array and print one of its values
      */
     public function classic_skin_callback()
-    {
+    { print esc_attr( $this->options['audiotube_skin']) ;
         printf(
             '<input type="radio" id="audiotube_skin" name="audiotube_options[audiotube_skin]" checked="%s" />',
-            (isset( $this->options['audiotube_skin']) && $this->options['audiotube_skin'] == 'classic'  ) ? 'checked' : 'none'
+            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'classic') ) ? 'checked' : 'none'
         );
     }
 
