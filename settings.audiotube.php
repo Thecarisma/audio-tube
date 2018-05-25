@@ -65,7 +65,7 @@ class MySettingsPage
 
         add_settings_section(
             'setting_section_id', // ID
-            'My Custom Settings', // Title
+            'Customize the AudioTube player skin and styles', // Title
             array( $this, 'print_section_info' ), // Callback
             'audiotube_settings_admin' // Page
         );  
