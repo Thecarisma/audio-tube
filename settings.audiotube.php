@@ -129,6 +129,14 @@ class MySettingsPage
             isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
         );
     }
+	
+	public function classic_skin_callback()
+    {
+        printf(
+            '<input type="text" id="id_number" name="audiotube_options[id_number]" value="%s" />',
+            isset( $this->options['id_number'] ) ? esc_attr( $this->options['id_number']) : ''
+        );
+    }
 
     /** 
      * Get the settings option array and print one of its values
