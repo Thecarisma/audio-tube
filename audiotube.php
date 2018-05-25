@@ -45,9 +45,9 @@ require_once( AUDIO_TUBE_PLUGIN_DIR . 'settings.audiotube.php' );
 if( is_admin() )
     $my_settings_page = new MySettingsPage();
 
-$myoptions = get_option('audiotube_options');
-var_export( $myoptions );
-var_export( $myoptions );
+#$myoptions = get_option('audiotube_options');
+#var_export( $myoptions );
+#var_export( $myoptions );
 add_action( 'init', array( 'AudioTube', 'init' ) );
 
 ?>
