@@ -72,10 +72,12 @@ class MySettingsPage
 		
 		add_settings_section(
             'audio_tube_preview_option', // ID
-            'Customize the AudioTube player skin and styles', // Title
+            'Your Configuration Preview', // Title
             array( $this, 'empty_info' ), // Callback
             'audiotube_settings_admin' // Page
         ); 
+		
+		//preview
 
         add_settings_section(
             'audio_tube_skin_option', // ID
