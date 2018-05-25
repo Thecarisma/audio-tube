@@ -2,7 +2,7 @@
 
 header("Content-type: text/css");
 
-#style 2 variables
+$player_style = $_GET[""] ;
 
 echo '
 
