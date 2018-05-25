@@ -155,16 +155,16 @@ class MySettingsPage
 	public function elegant_skin_callback()
     {
         printf( 
-            '<input type="radio" id="is_elegant_skin" name="audiotube_options[is_elegant_skin]" %s />',
-            (isset( $this->options['is_elegant_skin']) && esc_attr( $this->options['is_elegant_skin']) == 'true' ) ? 'checked="checked"' : 'checked="false"'
+            '<input type="radio" id="audiotube_skin" name="audiotube_options[audiotube_skin]" %s />',
+            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin']) == 'elegant' ) ? 'checked="checked"' : 'checked="false"'
         );
     }
 	
 	public function chromic_skin_callback()
     {
         printf( 
-            '<input type="radio" id="is_chromic_skin" name="audiotube_options[is_chromic_skin]" %s />',
-            (isset( $this->options['is_chromic_skin']) && esc_attr( $this->options['is_chromic_skin']) == 'true' ) ? 'checked="checked"' : 'checked="false"'
+            '<input type="radio" id="audiotube_skin" name="audiotube_options[audiotube_skin]" %s />',
+            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin']) == 'chromic' ) ? 'checked="checked"' : 'checked="false"'
         );
     }
 
