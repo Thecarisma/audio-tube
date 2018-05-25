@@ -184,10 +184,10 @@ function createStyle2Layout() {
 		divider.id = "audio-tube-divider" ;
 		youtubeAudios[i].appendChild(divider); 
 		//volume button
-		youtubeAudioVB[i].marginRight = "2%" ;
 		youtubeAudios[i].appendChild(youtubeAudioVB[i]);
 		(function(i) {
 			var position = i ;
+			youtubeAudioVB[position].marginRight = "2%" ;
 			youtubeAudioVB[i].onclick = function () {
 				if (this.src.endsWith(unMuteIcon)) {
 					this.src = muteIcon ;
@@ -203,10 +203,10 @@ function createStyle2Layout() {
 		divider.id = "audio-tube-divider" ;
 		youtubeAudios[i].appendChild(divider); 
 		//repeat button
-		youtubeAudioRB[i].marginRight = "2%" ;
 		youtubeAudios[i].appendChild(youtubeAudioRB[i]);
 		(function(i) {
 			var position = i ;
+			youtubeAudioRB[position].marginRight = "2%" ;
 			youtubeAudioRB[i].onclick = function () {
 				//youtubePlayers[position].seekTo(0);
 				//youtubeAudioProgress[position].style.width = "0%"; 
