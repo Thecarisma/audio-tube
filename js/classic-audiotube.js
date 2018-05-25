@@ -182,9 +182,9 @@ function createStyle2Layout() {
 		//divider
 		var divider = document.createElement("span");
 		divider.id = "audio-tube-divider" ;
+		divider.marginLeft = "2%" ;
 		youtubeAudios[i].appendChild(divider); 
 		//volume button
-		youtubeAudioVB[i].className = "margin-right" ;
 		youtubeAudios[i].appendChild(youtubeAudioVB[i]);
 		(function(i) {
 			var position = i ;

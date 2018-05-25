@@ -73,11 +73,6 @@ echo '
 	margin-right:4%;
 }
 
-.margin-right {
-	margin:100px;
-	background:red;
-}
-
 ' ;
 
 
