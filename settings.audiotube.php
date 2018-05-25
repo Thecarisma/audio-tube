@@ -151,6 +151,22 @@ class MySettingsPage
             (isset( $this->options['is_classic_skin']) && esc_attr( $this->options['is_classic_skin']) == 'true' ) ? 'checked="checked"' : 'checked="false"'
         );
     }
+	
+	public function elegant_skin_callback()
+    {
+        printf( 
+            '<input type="radio" id="is_classic_skin" name="audiotube_options[is_classic_skin]" %s />',
+            (isset( $this->options['is_classic_skin']) && esc_attr( $this->options['is_classic_skin']) == 'true' ) ? 'checked="checked"' : 'checked="false"'
+        );
+    }
+	
+	public function chromic_skin_callback()
+    {
+        printf( 
+            '<input type="radio" id="is_classic_skin" name="audiotube_options[is_classic_skin]" %s />',
+            (isset( $this->options['is_classic_skin']) && esc_attr( $this->options['is_classic_skin']) == 'true' ) ? 'checked="checked"' : 'checked="false"'
+        );
+    }
 
     /** 
      * Get the settings option array and print one of its values
