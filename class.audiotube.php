@@ -19,7 +19,7 @@ STYLE
 class AudioTube {
 	
 	private static $initiated = false;
-	private static $skin = 1 ;
+	private static $skin = 2 ;
 	private static $player_style = 2 ;
 	
 	function init(){
