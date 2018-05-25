@@ -73,7 +73,9 @@ echo '
 	margin-right:4%;
 }
 
-
+.margin-right-2 {
+	
+}
 
 ' ;
 
