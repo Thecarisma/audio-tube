@@ -20,7 +20,7 @@ class AudioTube {
 	
 	private static $initiated = false;
 	private static $skin = 0 ;
-	private static $player_style = false ;
+	private static $player_style = 1 ;
 	
 	function init(){
 		if ( ! self::$initiated ) {
@@ -48,23 +48,23 @@ class AudioTube {
 			var repeatIcon = "'.$repeat_icon.'" ; 
 			var notRepeatIcon = "'.$not_repeat_icon.'" ; 
 			
-			var playerSkin = "'.$skin.'" ; 
-			var playerStyle = "'.$player_style.'" ; 
+			var playerSkin = "'.self::$skin.'" ; 
+			var playerStyle = "'.self::$player_style.'" ; 
 		</script>' ;
 		#echo '<script src="https://www.youtube.com/player_api"></script>' ;
 
 		if ( self::$skin == 0) {
 			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.php?'.time(),__FILE__ ));
-			wp_register_script( 'audiotube-script', plugins_url('/js/classic-audiotube.js?'.time(),__FILE__ ));
+			wp_register_script( 'audiotube-script', plugins_url('/js/classic-audiotube.js',__FILE__ ));
 		} else if ( self::$skin == 1 ) {
 			wp_register_style('audiotube-style', plugins_url('/css/elegant-audiotube.php?'.time(),__FILE__ ));
-			wp_register_script( 'audiotube-script', plugins_url('/js/elegant-audiotube.js?'.time(),__FILE__ ));
+			wp_register_script( 'audiotube-script', plugins_url('/js/elegant-audiotube.js',__FILE__ ));
 		} else if ( self::$skin == 2 ) {
 			wp_register_style('audiotube-style', plugins_url('/css/chromic-audiotube.php?'.time(),__FILE__ ));
-			wp_register_script( 'audiotube-script', plugins_url('/js/chromic-audiotube.js?'.time(),__FILE__ ));
+			wp_register_script( 'audiotube-script', plugins_url('/js/chromic-audiotube.js',__FILE__ ));
 		} else {
-			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.php?'.time(),__FILE__ ));
-			wp_register_script( 'audiotube-script', plugins_url('/js/classic-audiotube.js?'.time(),__FILE__ ));
+			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.php',__FILE__ ));
+			wp_register_script( 'audiotube-script', plugins_url('/js/classic-audiotube.js',__FILE__ ));
 		}
 		
 		wp_register_script( 'audiotube-script-jquery', plugins_url('/js/jquery.min.js',__FILE__ ));
