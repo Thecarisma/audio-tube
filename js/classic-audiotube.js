@@ -219,6 +219,11 @@ function createStyle2Layout() {
 				}
 			};
 		}(i));		
+		//divider
+		var divider = document.createElement("span");
+		divider.id = "audio-tube-divider" ;
+		youtubeAudios[i].appendChild(divider); 
+		//time 
 		youtubeAudios[i].appendChild(youtubeAudioTimeSpans[i]);
 		youtubeAudios[i].appendChild(youtubeAudioDuration[i]);
 		youtubeAudios[i].appendChild(youtubeIPlayer[i]);
