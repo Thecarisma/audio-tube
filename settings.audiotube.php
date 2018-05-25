@@ -74,7 +74,7 @@ class MySettingsPage
             'audio_tube_preview_option', // ID
             'Your Configuration Preview', // Title
             array( $this, 'empty_info' ), // Callback
-            'audiotube_settings_admin' // Page
+            'audiotube_settings_admin_1' // Page
         ); 
 		
 		//preview
