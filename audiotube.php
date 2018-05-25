@@ -46,6 +46,8 @@ if( is_admin() )
     $my_settings_page = new MySettingsPage();
 
 echo "YEA YEA "+esc_attr(MySettingsPage::$options['title']);
+$myoptions = get_option('plugin_options');
+var_export( $myoptions );
 add_action( 'init', array( 'AudioTube', 'init' ) );
 
 ?>
