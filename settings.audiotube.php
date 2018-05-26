@@ -103,7 +103,7 @@ class MySettingsPage
     public function sanitize( $input )
     {
         $new_input = array();
-        if( isset( $input['classic_skin'] ) ) echo absint($input['classic_skin']) ;
+        if( isset( $input['classic_skin'] ) ) 
             $new_input['audiotube_skin'] = absint($input['classic_skin']) ;
 
         if( isset( $input['title'] ) )
