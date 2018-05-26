@@ -33,7 +33,7 @@ class AudioTube {
 		self::$initiated = true;
 		self::$options = get_option('audiotube_options');
 		var_export( $myoptions );
-		echo "".self::$options['audiotube_skin'];
+		echo "SKIN : ".self::$options['audiotube_skin']. " | STYLE : ".self::$options['audiotube_skin_style'];
 		add_action('wp_enqueue_scripts', array( 'AudioTube', 'fetch_scripts_styles' ) );
 	}
 
