@@ -20,8 +20,8 @@ class AudioTube {
 	
 	private static $initiated = false;
 	private static $options ;
-	private static $skin = 0 ;
-	private static $player_style = 2 ;
+	private $skin ;
+	private $player_style ;
 	
 	function init(){
 		if ( ! self::$initiated ) {
@@ -33,6 +33,7 @@ class AudioTube {
 		self::$initiated = true;
 		self::$options = get_option('audiotube_options');
 		echo "SKIN : ".self::$options['audiotube_skin']. " | STYLE : ".self::$options['audiotube_skin_style'];
+		$skin
 		add_action('wp_enqueue_scripts', array( 'AudioTube', 'fetch_scripts_styles' ) );
 	}
 
