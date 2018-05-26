@@ -130,10 +130,10 @@ class MySettingsPage
     public function style_callback()
     { 
         printf(
-            '<labe> <input type="radio" id="audiotube_skin_style" value="style_1" name="audiotube_options[audiotube_skin_style]" %s />&emsp; Classic &emsp; &emsp;</label>
-			<label> <input type="radio" id="audiotube_skin_style" value="chromic" name="audiotube_options[audiotube_skin_style]" %s />&emsp; Chromic &emsp; &emsp;</label>',
-            (isset( $this->options['audiotube_skin_style']) && esc_attr( $this->options['audiotube_skin_style'] == 'classic') ) ? 'checked="checked"' : '',
-			(isset( $this->options['audiotube_skin_style']) && esc_attr( $this->options['audiotube_skin_style'] == 'elegant') ) ? 'checked="checked"' : ''
+            '<labe> <input type="radio" id="audiotube_skin_style" value="style_1" name="audiotube_options[audiotube_skin_style]" %s />&emsp; Style 1 &emsp; &emsp;</label>
+			<label> <input type="radio" id="audiotube_skin_style" value="style_2" name="audiotube_options[audiotube_skin_style]" %s />&emsp; Style 2 &emsp; &emsp;</label>',
+            (isset( $this->options['audiotube_skin_style']) && esc_attr( $this->options['audiotube_skin_style'] == 'style_1') ) ? 'checked="checked"' : '',
+			(isset( $this->options['audiotube_skin_style']) && esc_attr( $this->options['audiotube_skin_style'] == 'style_2') ) ? 'checked="checked"' : ''
         );
     }
 }
