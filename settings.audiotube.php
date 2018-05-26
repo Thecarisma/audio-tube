@@ -76,14 +76,6 @@ class MySettingsPage
             array( $this, 'classic_skin_callback' ), // Callback
             'audiotube_settings_admin', // Page
             'setting_section_id' // Section           
-        );  
-
-        add_settings_field(
-            'chromic_skin', // ID
-            'Chromic Skin', // Title 
-            array( $this, 'chromic_skin_callback' ), // Callback
-            'audiotube_settings_admin', // Page
-            'setting_section_id' // Section           
         );    
 
         add_settings_field(
@@ -92,7 +84,15 @@ class MySettingsPage
             array( $this, 'elegant_skin_callback' ), // Callback
             'audiotube_settings_admin', // Page
             'setting_section_id' // Section           
-        );      
+        ); 
+
+        add_settings_field(
+            'chromic_skin', // ID
+            'Chromic Skin', // Title 
+            array( $this, 'chromic_skin_callback' ), // Callback
+            'audiotube_settings_admin', // Page
+            'setting_section_id' // Section           
+        );       
 
         add_settings_field(
             'title', 
