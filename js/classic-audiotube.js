@@ -103,14 +103,14 @@ function createStyle1Layout() {
 			var position = i ;
 			youtubeAudioProgressBar[i].onclick = function (e) {
 				var percent = (e.offsetX / this.offsetWidth) * 100 ;
-				youtubePlayers[position].seekTo(percent);
+				//youtubePlayers[position].seekTo(percent);
 				if (youtubeAudioPPB[position].src.endsWith(playIcon) ) {
 					youtubeAudioPPB[position].src = pauseIcon ;
 				}
 			};
 			youtubeAudioProgressBar[i].addEventListener("mousemove", function(e){
 				var percent = (e.offsetX / this.offsetWidth) * 100 ;
-				youtubePlayers[position].seekTo(percent);
+				//youtubePlayers[position].seekTo(percent);
 				if (youtubeAudioPPB[position].src.endsWith(playIcon) ) {
 					youtubeAudioPPB[position].src = pauseIcon ;
 				}
