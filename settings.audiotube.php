@@ -1,5 +1,5 @@
 <?php
-class MySettingsPage
+class AudioTubeSettings
 {
     /**
      * Holds the values to be used in the fields callbacks
