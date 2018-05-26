@@ -32,8 +32,9 @@ class AudioTube {
 	function init_audio_tube() {
 		self::$initiated = true;
 		self::$options = get_option('audiotube_options');
-		echo "SKIN : ".self::$options['audiotube_skin']. " | STYLE : ".self::$options['audiotube_skin_style'];
-		$skin
+		$skin = self::$options['audiotube_skin'] ;
+		$player_style = self::$options['audiotube_skin_style'];
+		echo "SKIN : ".$skin. " | STYLE : ".$player_style;
 		add_action('wp_enqueue_scripts', array( 'AudioTube', 'fetch_scripts_styles' ) );
 	}
 
