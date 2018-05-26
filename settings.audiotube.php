@@ -117,7 +117,7 @@ class MySettingsPage
      */
     public function print_section_info()
     {
-        #print 'Enter your settings below:';
+        print '<div style="display:flex;">';
     }
 
     /** 
