@@ -96,7 +96,7 @@ class MySettingsPage
     {
         $new_input = array();
         if( isset( $input['audiotube_skin'] ) )
-            $new_input['audiotube_skin'] = $input['audiotube_skin'] ;
+            $new_input['audiotube_skin'] = absint($input['audiotube_skin']) ;
 
         if( isset( $input['title'] ) )
             $new_input['title'] = sanitize_text_field( $input['title'] );
@@ -118,8 +118,8 @@ class MySettingsPage
     public function classic_skin_callback()
     { 
         printf(
-            '<input type="radio" id="audiotube_skin" name="audiotube_options[audiotube_skin]" checked="%s" />',
-            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'classic') ) ? 'checked' : 'none'
+            '<input type="radio" id="audiotube_skin" value="classic" name="audiotube_options[audiotube_skin]" %s />',
+            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'classic') ) ? 'checked="checked"' : ''
         );
     }
 
