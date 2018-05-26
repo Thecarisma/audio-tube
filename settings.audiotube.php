@@ -123,7 +123,7 @@ class MySettingsPage
         );
     }
 	
-    public function classic_skin_callback()
+    public function elegant_skin_callback()
     { 
         printf(
             '<input type="radio" id="audiotube_skin" value="classic" name="audiotube_options[audiotube_skin]" %s />',
