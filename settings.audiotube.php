@@ -107,21 +107,15 @@ class MySettingsPage
     /** 
      * Get the settings option array and print one of its values
      */
-    public function classic_skin_callback()
+    public function skin_callback()
     { 
         printf(
             '<input type="radio" id="audiotube_skin" value="classic" name="audiotube_options[audiotube_skin]" %s />
-			<label> <input type="radio" id="audiotube_skin" value="elegant" name="audiotube_options[audiotube_skin]" %s /> Elegant </label>',
+			<label> <input type="radio" id="audiotube_skin" value="elegant" name="audiotube_options[audiotube_skin]" %s /> Elegant </label>
+			<label> <input type="radio" id="audiotube_skin" value="chromic" name="audiotube_options[audiotube_skin]" %s /> Chromic </label>',
             (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'classic') ) ? 'checked="checked"' : '',
+			(isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'elegant') ) ? 'checked="checked"' : '',
 			(isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'elegant') ) ? 'checked="checked"' : ''
-        );
-    }
-	
-    public function chromic_skin_callback()
-    { 
-        printf(
-            '<input type="radio" id="audiotube_skin" value="chromic" name="audiotube_options[audiotube_skin]" %s /> <input type="radio" id="audiotube_skin" value="chromici" name="audiotube_options[audiotube_skin]"  />',
-            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'elegant') ) ? 'checked="checked"' : ''
         );
     }
 
