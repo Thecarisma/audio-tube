@@ -76,6 +76,14 @@ class MySettingsPage
             array( $this, 'classic_skin_callback' ), // Callback
             'audiotube_settings_admin', // Page
             'setting_section_id' // Section           
+        );    
+
+        add_settings_field(
+            'elegant_skin', // ID
+            'Elegant Skin', // Title 
+            array( $this, 'elegant_skin_callback' ), // Callback
+            'audiotube_settings_admin', // Page
+            'setting_section_id' // Section           
         );      
 
         add_settings_field(
@@ -126,8 +134,8 @@ class MySettingsPage
     public function elegant_skin_callback()
     { 
         printf(
-            '<input type="radio" id="audiotube_skin" value="classic" name="audiotube_options[audiotube_skin]" %s />',
-            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'classic') ) ? 'checked="checked"' : ''
+            '<input type="radio" id="audiotube_skin" value="elegant" name="audiotube_options[audiotube_skin]" %s />',
+            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'elegant') ) ? 'checked="checked"' : ''
         );
     }
 
