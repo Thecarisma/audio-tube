@@ -32,7 +32,7 @@ class AudioTube {
 	function init_audio_tube() {
 		self::$initiated = true;
 		self::$options = get_option('audiotube_options');
-		$skin = self::$options['audiotube_skin'] ;
+		$this->skin = self::$options['audiotube_skin'] ;
 		$player_style = self::$options['audiotube_skin_style'];
 		echo "SKIN : ".$skin. " | STYLE : ".$player_style;
 		add_action('wp_enqueue_scripts', array( 'AudioTube', 'fetch_scripts_styles' ) );
@@ -54,7 +54,7 @@ class AudioTube {
 			var notRepeatIcon = "'.$not_repeat_icon.'" ; 
 			
 			var playerSkin = "'.$skin.'" ; 
-			var playerStyle = "'.$player_style.'" ; alert("'.$skin.'");
+			var playerStyle = "'.$player_style.'" ; alert("'.$this->skin.'");
 		</script>' ;
 		#echo '<script src="https://www.youtube.com/player_api"></script>' ; 
 
