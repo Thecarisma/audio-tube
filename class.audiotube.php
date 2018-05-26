@@ -34,7 +34,6 @@ class AudioTube {
 		self::$options = get_option('audiotube_options');
 		self::$skin = self::$options['audiotube_skin'] ;
 		self::$player_style = self::$options['audiotube_skin_style'];
-		echo "SKIN : ".self::$skin. " | STYLE : ".self::$player_style;
 		add_action('wp_enqueue_scripts', array( 'AudioTube', 'fetch_scripts_styles' ) );
 	}
 
