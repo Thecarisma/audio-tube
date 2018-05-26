@@ -156,7 +156,9 @@ class MySettingsPage
 		printf(
 				'<input type="button" value="Follow Author" target="_blank" />',
 				'<script>
-					function followAuthor
+					function followAuthor() {
+						alert("iamthecarisma");
+					}
 				</script>'
 			);
     }
