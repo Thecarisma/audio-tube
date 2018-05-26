@@ -64,14 +64,22 @@ class MySettingsPage
         );
 
         add_settings_section(
-            'setting_section_id', // ID
-            'My Custom Settings', // Title
-            array( $this, 'print_section_info' ), // Callback
-            'audiotube_settings_admin' // Page
+            'setting_section_id', 
+            'My Custom Settings', 
+            array( $this, 'print_section_info' ), 
+            'audiotube_settings_admin' 
         );  
 
         add_settings_field(
             'select_skin', // ID
+            'Select Skin', // Title 
+            array( $this, 'skin_callback' ), // Callback
+            'audiotube_settings_admin', // Page
+            'setting_section_id' // Section           
+        ); 
+
+        add_settings_field(
+            'select_style', // ID
             'Select Skin', // Title 
             array( $this, 'skin_callback' ), // Callback
             'audiotube_settings_admin', // Page
@@ -116,17 +124,6 @@ class MySettingsPage
             (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'classic') ) ? 'checked="checked"' : '',
 			(isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'elegant') ) ? 'checked="checked"' : '',
 			(isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'elegant') ) ? 'checked="checked"' : ''
-        );
-    }
-
-    /** 
-     * Get the settings option array and print one of its values
-     */
-    public function title_callback()
-    {
-        printf(
-            '<input type="text" id="title" name="audiotube_options[title]" value="%s" />',
-            isset( $this->options['title'] ) ? esc_attr( $this->options['title']) : ''
         );
     }
 }
