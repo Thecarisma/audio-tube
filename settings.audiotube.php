@@ -110,7 +110,7 @@ class MySettingsPage
     public function skin_callback()
     { 
         printf(
-            '<input type="radio" id="audiotube_skin" value="classic" name="audiotube_options[audiotube_skin]" %s />
+            '<labe> <input type="radio" id="audiotube_skin" value="classic" name="audiotube_options[audiotube_skin]" %s /> Classic </label>
 			<label> <input type="radio" id="audiotube_skin" value="elegant" name="audiotube_options[audiotube_skin]" %s /> Elegant </label>
 			<label> <input type="radio" id="audiotube_skin" value="chromic" name="audiotube_options[audiotube_skin]" %s /> Chromic </label>',
             (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'classic') ) ? 'checked="checked"' : '',
