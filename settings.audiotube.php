@@ -127,7 +127,7 @@ class MySettingsPage
     { 
         printf(
             '<input type="radio" id="classic_skin" value="classic" name="audiotube_options[classic_skin]" %s />',
-            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'classic') ) ? 'checked="checked"' : ''
+            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 0 ) ) ? 'checked="checked"' : ''
         );
     }
 	
@@ -135,7 +135,7 @@ class MySettingsPage
     { 
         printf(
             '<input type="radio" id="elegant_skin" value="elegant" name="audiotube_options[elegant_skin]" %s />',
-            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'elegant') ) ? 'checked="checked"' : ''
+            (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 1 ) ) ? 'checked="checked"' : ''
         );
     }
 
