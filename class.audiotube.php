@@ -26,14 +26,13 @@ class AudioTube {
 	function init(){
 		if ( ! self::$initiated ) {
 			self::init_audio_tube();
-		}
-	var_export( $myoptions );
-	
+		}	
 	}
 	
 	function init_audio_tube() {
 		self::$initiated = true;
 		self::$options = get_option('audiotube_options');
+		var_export( $myoptions );
 		add_action('wp_enqueue_scripts', array( 'AudioTube', 'fetch_scripts_styles' ) );
 	}
 
