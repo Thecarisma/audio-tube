@@ -109,7 +109,7 @@ function createStyle1Layout() {
 				}
 			}; **/
 			youtubeAudioProgressBar[i].draggable = 'true' ;
-			youtubeAudioProgressBar[i].addEventListener("ondrag", function(e){
+			youtubeAudios[i].addEventListener("ondrag", function(e){
 				e = e || window.event;
 				var dragX = e.pageX, dragY = e.pageY;
 
