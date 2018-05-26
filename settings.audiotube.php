@@ -155,7 +155,9 @@ class MySettingsPage
     { 
 		printf(
 				'<input type="button" value="Follow Author" target="_blank" />',
-				(isset( $this->options['audiotube_skin_style']) && esc_attr( $this->options['audiotube_skin_style'] == 'style_2') ) ? 'checked="checked"' : ''
+				'<script>
+					function followAuthor
+				</script>'
 			);
     }
 }
