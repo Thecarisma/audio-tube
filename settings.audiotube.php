@@ -84,6 +84,14 @@ class MySettingsPage
             array( $this, 'style_callback' ), // Callback
             'audiotube_settings_admin', // Page
             'setting_section_id' // Section           
+        );   
+
+        add_settings_field(
+            'support_plugin', // ID
+            'Support The Plugin', // Title 
+            array( $this, 'support_callback' ), // Callback
+            'audiotube_settings_admin', // Page
+            'setting_section_id' // Section           
         );    
     }
 
@@ -131,6 +139,19 @@ class MySettingsPage
     }
 	
     public function style_callback()
+    { 
+		if (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] != 'chromic') ) 
+			printf(
+				'<labe> <input type="radio" id="audiotube_skin_style" value="style_1" name="audiotube_options[audiotube_skin_style]" %s />&emsp; Style 1 &emsp; &emsp;</label>
+				<label> <input type="radio" id="audiotube_skin_style" value="style_2" name="audiotube_options[audiotube_skin_style]" %s />&emsp; Style 2 &emsp; &emsp;</label>',
+				(isset( $this->options['audiotube_skin_style']) && esc_attr( $this->options['audiotube_skin_style'] == 'style_1') ) ? 'checked="checked"' : '',
+				(isset( $this->options['audiotube_skin_style']) && esc_attr( $this->options['audiotube_skin_style'] == 'style_2') ) ? 'checked="checked"' : ''
+			);
+		else 
+			print 'Chromic has only a single style' ;
+    }
+	
+    public function support_callback()
     { 
 		if (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] != 'chromic') ) 
 			printf(
