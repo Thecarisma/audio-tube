@@ -117,7 +117,7 @@ class MySettingsPage
      */
     public function print_section_info()
     {
-        print '<div style="display:flex;">';
+        #print 'Enter your settings below:';
     }
 
     /** 
@@ -126,7 +126,7 @@ class MySettingsPage
     public function classic_skin_callback()
     { 
         printf(
-            '<input style="display:inline-block;" type="radio" id="audiotube_skin" value="classic" name="audiotube_options[audiotube_skin]" %s />',
+            '<input type="radio" id="audiotube_skin" value="classic" name="audiotube_options[audiotube_skin]" %s />',
             (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'classic') ) ? 'checked="checked"' : ''
         );
     }
@@ -134,7 +134,7 @@ class MySettingsPage
     public function elegant_skin_callback()
     { 
         printf(
-            '<input type="radio" style="display:inline-block;" id="audiotube_skin" value="elegant" name="audiotube_options[audiotube_skin]" %s />',
+            '<input type="radio" id="audiotube_skin" value="elegant" name="audiotube_options[audiotube_skin]" %s />',
             (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'elegant') ) ? 'checked="checked"' : ''
         );
     }
@@ -145,7 +145,7 @@ class MySettingsPage
     public function title_callback()
     {
         printf(
-            '<input type="text" style="display:inline-block;" id="title" name="audiotube_options[title]" value="%s" />',
+            '<input type="text" id="title" name="audiotube_options[title]" value="%s" />',
             isset( $this->options['title'] ) ? esc_attr( $this->options['title']) : ''
         );
     }
