@@ -107,7 +107,7 @@ class MySettingsPage
             $new_input['audiotube_skin'] = esc_attr($input['audiotube_skin'])  ;
 
         if( isset( $input['audiotube_skin_style'] ) )
-            $new_input['audiotube_skin_style'] = (esc_attr($input['audiotube_skin_style']) != '' ? : esc_attr($input['audiotube_skin_style'])) ;
+            $new_input['audiotube_skin_style'] = (esc_attr($input['audiotube_skin_style']) != esc_attr($input['audiotube_skin_style']) ? : 'style_1' ) ;
 
         if( isset( $input['title'] ) )
             $new_input['title'] = sanitize_text_field( $input['title'] );
