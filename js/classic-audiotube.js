@@ -109,7 +109,7 @@ function createStyle1Layout() {
 				}
 			}; **/
 			youtubeAudioProgressBar[i].addEventListener("mousemove", function(e){
-				e = e || window.event; alert("onmousemove");
+				e = e || window.event; 
 				var dragX = e.pageX, dragY = e.pageY;
 
 				console.log("X: "+dragX+" Y: "+dragY);
