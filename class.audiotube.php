@@ -19,8 +19,8 @@ STYLE
 class AudioTube {
 	
 	private static $initiated = false;
+	private static $options ;
 	private static $skin = 0 ;
-	private static $options = 0 ;
 	private static $player_style = 2 ;
 	
 	function init(){
