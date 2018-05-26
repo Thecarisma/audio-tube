@@ -155,8 +155,7 @@ class MySettingsPage
     { 
 		if (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] != 'chromic') ) 
 			printf(
-				'<labe> <input type="radio" id="audiotube_skin_style" value="style_1" name="audiotube_options[audiotube_skin_style]" %s />',
-				(isset( $this->options['audiotube_skin_style']) && esc_attr( $this->options['audiotube_skin_style'] == 'style_1') ) ? 'checked="checked"' : '',
+				'<input type="button" value="Follow Author" %s />',
 				(isset( $this->options['audiotube_skin_style']) && esc_attr( $this->options['audiotube_skin_style'] == 'style_2') ) ? 'checked="checked"' : ''
 			);
 		else 
