@@ -301,7 +301,7 @@ function onYouTubeIframeAPIReady() {
 					var audioDuration = date.toISOString().substr(11, 8);
 					youtubeAudioDuration[position].innerHTML = audioDuration ; 
 					initProgressTimer(position);
-				},
+				}, 
 				"onStateChange": function(e) {
 					var value = 0;
 					if (e.target.getCurrentTime() > 0) {
