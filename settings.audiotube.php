@@ -132,7 +132,7 @@ class MySettingsPage
 	
     public function style_callback()
     { 
-		if (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] != 'classic') ) 
+		if (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] != 'chromic') ) 
 			printf(
 				'<labe> <input type="radio" id="audiotube_skin_style" value="style_1" name="audiotube_options[audiotube_skin_style]" %s />&emsp; Style 1 &emsp; &emsp;</label>
 				<label> <input type="radio" id="audiotube_skin_style" value="style_2" name="audiotube_options[audiotube_skin_style]" %s />&emsp; Style 2 &emsp; &emsp;</label>',
