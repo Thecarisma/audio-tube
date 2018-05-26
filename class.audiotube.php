@@ -20,18 +20,20 @@ class AudioTube {
 	
 	private static $initiated = false;
 	private static $skin = 0 ;
+	private static $options = 0 ;
 	private static $player_style = 2 ;
 	
 	function init(){
 		if ( ! self::$initiated ) {
 			self::init_audio_tube();
-		}$myoptions = get_option('audiotube_options');
+		}
 	var_export( $myoptions );
 	
 	}
 	
 	function init_audio_tube() {
 		self::$initiated = true;
+		self::$options = get_option('audiotube_options');
 		add_action('wp_enqueue_scripts', array( 'AudioTube', 'fetch_scripts_styles' ) );
 	}
 
