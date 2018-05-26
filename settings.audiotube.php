@@ -154,7 +154,7 @@ class MySettingsPage
     public function support_callback()
     { 
 		printf(
-				'<input type="button" value="Follow Author" target="_blank" />',
+				'<input type="button" value="Follow Author" target="_blank" onClick="followAuthor()" />%s',
 				'<script>
 					function followAuthor() {
 						alert("iamthecarisma");
