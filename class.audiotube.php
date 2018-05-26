@@ -54,9 +54,9 @@ class AudioTube {
 			var notRepeatIcon = "'.$not_repeat_icon.'" ; 
 			
 			var playerSkin = "'.$skin.'" ; 
-			var playerStyle = "'.$player_style.'" ; 
+			var playerStyle = "'.$player_style.'" alert(playerStyle);; 
 		</script>' ;
-		#echo '<script src="https://www.youtube.com/player_api"></script>' ;
+		#echo '<script src="https://www.youtube.com/player_api"></script>' ; 
 
 		if ( $skin == 'classic' ) {
 			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.php?'.time(),__FILE__ ));

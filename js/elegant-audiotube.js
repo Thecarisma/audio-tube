@@ -69,7 +69,7 @@ $(window).bind("load", function() {
 		rb.id = "audio-tube-repeat" ;
 		youtubeAudioRB[i] = rb ;
 		youtubeAudioRepeat[i] = false ;
-	} alert(playerStyle);
+	} 
 	if (playerStyle == 'style_1') {
 		createStyle1Layout();
 	} else if (playerStyle == 'style_2') {
