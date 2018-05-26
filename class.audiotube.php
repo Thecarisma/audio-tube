@@ -20,8 +20,8 @@ class AudioTube {
 	
 	private static $initiated = false;
 	private static $options ;
-	private $skin ;
-	private $player_style ;
+	private static $skin ;
+	private static $player_style ;
 	
 	function init(){
 		if ( ! self::$initiated ) {
@@ -32,9 +32,9 @@ class AudioTube {
 	function init_audio_tube() {
 		self::$initiated = true;
 		self::$options = get_option('audiotube_options');
-		$this->skin = self::$options['audiotube_skin'] ;
-		$player_style = self::$options['audiotube_skin_style'];
-		echo "SKIN : ".$skin. " | STYLE : ".$player_style;
+		self::$skin = self::$options['audiotube_skin'] ;
+		self::$player_style = self::$options['audiotube_skin_style'];
+		echo "SKIN : ".self::$skin. " | STYLE : ".self::$player_style;
 		add_action('wp_enqueue_scripts', array( 'AudioTube', 'fetch_scripts_styles' ) );
 	}
 
@@ -53,8 +53,8 @@ class AudioTube {
 			var repeatIcon = "'.$repeat_icon.'" ; 
 			var notRepeatIcon = "'.$not_repeat_icon.'" ; 
 			
-			var playerSkin = "'.$skin.'" ; 
-			var playerStyle = "'.$player_style.'" ; alert("'.$this->skin.'");
+			var playerSkin = "'.self::$skin.'" ; 
+			var playerStyle = "'.self::$player_style.'" ; alert("'.self::$skin.'");
 		</script>' ;
 		#echo '<script src="https://www.youtube.com/player_api"></script>' ; 
 
