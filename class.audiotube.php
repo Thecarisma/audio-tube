@@ -25,7 +25,9 @@ class AudioTube {
 	function init(){
 		if ( ! self::$initiated ) {
 			self::init_audio_tube();
-		}
+		}$myoptions = get_option('audiotube_options');
+	var_export( $myoptions );
+	
 	}
 	
 	function init_audio_tube() {
