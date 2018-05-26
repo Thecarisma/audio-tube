@@ -108,6 +108,14 @@ function createStyle1Layout() {
 					youtubeAudioPPB[position].src = pauseIcon ;
 				}
 			};
+			youtubeAudioProgressBar[i].addEventListener("mousemove", function(e){
+				var percent = (e.offsetX / this.offsetWidth) * youtubePlayers[position].getDuration() ;
+				youtubeAudioProgress[position].style.width = percent + "%";
+			}, false);
+			youtubeAudioProgressBar[i].addEventListener("mouseleave", function(e){
+				var percent = Math.floor((100 / youtubePlayers[position].getDuration()) * youtubePlayers[position].getCurrentTime()) ;
+				youtubeAudioProgress[position].style.width = percent + "%";
+			}, false);
 		}(i));
 		youtubeAudios[i].appendChild(youtubeAudioDuration[i]);
 		youtubeAudios[i].appendChild(youtubeAudioVB[i]);
@@ -246,6 +254,14 @@ function createStyle2Layout() {
 					youtubeAudioPPB[position].src = pauseIcon ;
 				}
 			};
+			youtubeAudioProgressBar[i].addEventListener("mousemove", function(e){
+				var percent = (e.offsetX / this.offsetWidth) * youtubePlayers[position].getDuration() ;
+				youtubeAudioProgress[position].style.width = percent + "%";
+			}, false);
+			youtubeAudioProgressBar[i].addEventListener("mouseleave", function(e){
+				var percent = Math.floor((100 / youtubePlayers[position].getDuration()) * youtubePlayers[position].getCurrentTime()) ;
+				youtubeAudioProgress[position].style.width = percent + "%";
+			}, false);
 		}(i));
 		/**youtubeAudioVolumeBar[i].appendChild(youtubeAudioVolume[i]);
 		youtubeAudios[i].appendChild(youtubeAudioVolumeBar[i]);
