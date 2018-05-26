@@ -112,6 +112,10 @@ function createStyle1Layout() {
 				var percent = (e.offsetX / this.offsetWidth) * 100;//youtubePlayers[position].getDuration() ;
 				youtubeAudioProgress[position].style.width = percent + "%";
 			}, false);
+			youtubeAudioProgressBar[i].addEventListener("mouseleave", function(e){
+				var percent = (e.offsetX / this.offsetWidth) * 100;//youtubePlayers[position].getDuration() ;
+				youtubeAudioProgress[position].style.width = percent + "%";
+			}, false);
 		}(i));
 		youtubeAudios[i].appendChild(youtubeAudioDuration[i]);
 		youtubeAudios[i].appendChild(youtubeAudioVB[i]);
