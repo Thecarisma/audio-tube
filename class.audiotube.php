@@ -54,7 +54,7 @@ class AudioTube {
 			var notRepeatIcon = "'.$not_repeat_icon.'" ; 
 			
 			var playerSkin = "'.$skin.'" ; 
-			var playerStyle = "'.$player_style.'" ; alert(playerStyle);
+			var playerStyle = "'.$player_style.'" ; alert("'.$skin.'");
 		</script>' ;
 		#echo '<script src="https://www.youtube.com/player_api"></script>' ; 
 
