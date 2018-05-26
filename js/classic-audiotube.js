@@ -101,18 +101,19 @@ function createStyle1Layout() {
 		youtubeAudios[i].appendChild(youtubeAudioProgressBar[i]);
 		(function(i) {
 			var position = i ;
-			/**youtubeAudioProgressBar[i].onclick = function (e) {
+			youtubeAudioProgressBar[i].onclick = function (e) {
 				var percent = (e.offsetX / this.offsetWidth) * youtubePlayers[position].getDuration() ;
 				youtubePlayers[position].seekTo(percent);
 				if (youtubeAudioPPB[position].src.endsWith(playIcon) ) {
 					youtubeAudioPPB[position].src = pauseIcon ;
 				}
-			}; **/
+			};
 			youtubeAudioProgressBar[i].addEventListener("mousemove", function(e){
-				e = e || window.event; 
-				var dragX = e.pageX, dragY = e.pageY;
-
-				console.log("X: "+dragX+" Y: "+dragY);
+				var percent = (e.offsetX / this.offsetWidth) * youtubePlayers[position].getDuration() ;
+				youtubePlayers[position].seekTo(percent);
+				if (youtubeAudioPPB[position].src.endsWith(playIcon) ) {
+					youtubeAudioPPB[position].src = pauseIcon ;
+				}
 			}, false);
 		}(i));
 		youtubeAudios[i].appendChild(youtubeAudioDuration[i]);
