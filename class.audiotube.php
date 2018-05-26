@@ -58,13 +58,13 @@ class AudioTube {
 		</script>' ;
 		#echo '<script src="https://www.youtube.com/player_api"></script>' ;
 
-		if ( self::$skin == 0) {
+		if ( $skin == 0) {
 			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.php?'.time(),__FILE__ ));
 			wp_register_script( 'audiotube-script', plugins_url('/js/classic-audiotube.js',__FILE__ ));
-		} else if ( self::$skin == 1 ) {
+		} else if ( $skin == 1 ) {
 			wp_register_style('audiotube-style', plugins_url('/css/elegant-audiotube.php?'.time(),__FILE__ ));
 			wp_register_script( 'audiotube-script', plugins_url('/js/elegant-audiotube.js',__FILE__ ));
-		} else if ( self::$skin == 2 ) {
+		} else if ( $skin == 2 ) {
 			wp_register_style('audiotube-style', plugins_url('/css/chromic-audiotube.php?'.time(),__FILE__ ));
 			wp_register_script( 'audiotube-script', plugins_url('/js/chromic-audiotube.js',__FILE__ ));
 		} else {
