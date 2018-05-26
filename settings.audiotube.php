@@ -103,8 +103,8 @@ class MySettingsPage
     public function sanitize( $input )
     {
         $new_input = array();
-        if( isset( $input['audiotube_skin'] ) )
-            $new_input['audiotube_skin'] = absint($input['audiotube_skin']) ;
+        if( isset( $input['classic_skin'] ) )
+            $new_input['audiotube_skin'] = absint($input['classic_skin']) ;
 
         if( isset( $input['title'] ) )
             $new_input['title'] = sanitize_text_field( $input['title'] );
@@ -126,7 +126,7 @@ class MySettingsPage
     public function classic_skin_callback()
     { 
         printf(
-            '<input type="radio" id="audiotube_skin" value="classic" name="audiotube_options[audiotube_skin]" %s />',
+            '<input type="radio" id="classic_skin" value="classic" name="audiotube_options[classic_skin]" %s />',
             (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'classic') ) ? 'checked="checked"' : ''
         );
     }
@@ -134,7 +134,7 @@ class MySettingsPage
     public function elegant_skin_callback()
     { 
         printf(
-            '<input type="radio" id="audiotube_skin" value="elegant" name="audiotube_options[audiotube_skin]" %s />',
+            '<input type="radio" id="elegant_skin" value="elegant" name="audiotube_options[elegant_skin]" %s />',
             (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'elegant') ) ? 'checked="checked"' : ''
         );
     }
