@@ -110,9 +110,9 @@ class MySettingsPage
     public function skin_callback()
     { 
         printf(
-            '<labe> <input type="radio" id="audiotube_skin" value="classic" name="audiotube_options[audiotube_skin]" %s /> Classic </label>
-			<label> <input type="radio" id="audiotube_skin" value="elegant" name="audiotube_options[audiotube_skin]" %s /> Elegant </label>
-			<label> <input type="radio" id="audiotube_skin" value="chromic" name="audiotube_options[audiotube_skin]" %s /> Chromic </label>',
+            '<labe> <input type="radio" id="audiotube_skin" value="classic" name="audiotube_options[audiotube_skin]" %s />&emsp; Classic &emsp; &emsp;</label>
+			<label> <input type="radio" id="audiotube_skin" value="elegant" name="audiotube_options[audiotube_skin]" %s />&emsp;Elegant &emsp; &emsp;</label>
+			<label> <input type="radio" id="audiotube_skin" value="chromic" name="audiotube_options[audiotube_skin]" %s />&emsp; Chromic &emsp; &emsp;</label>',
             (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'classic') ) ? 'checked="checked"' : '',
 			(isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'elegant') ) ? 'checked="checked"' : '',
 			(isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'elegant') ) ? 'checked="checked"' : ''
