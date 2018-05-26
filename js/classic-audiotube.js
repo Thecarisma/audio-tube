@@ -109,11 +109,12 @@ function createStyle1Layout() {
 				}
 			};
 			youtubeAudioProgressBar[i].addEventListener("mousemove", function(e){
-				var percent = (e.offsetX / this.offsetWidth) * youtubePlayers[position].getDuration() ;
-				youtubePlayers[position].seekTo(percent);
-				if (youtubeAudioPPB[position].src.endsWith(playIcon) ) {
-					youtubeAudioPPB[position].src = pauseIcon ;
-				}
+				var percent = (e.offsetX / this.offsetWidth) * 100;//youtubePlayers[position].getDuration() ;
+				youtubeAudioProgress[position].style.width = percent + "%";
+				//youtubePlayers[position].seekTo(percent);
+				//if (youtubeAudioPPB[position].src.endsWith(playIcon) ) {
+				//	youtubeAudioPPB[position].src = pauseIcon ;
+				//}
 			}, false);
 		}(i));
 		youtubeAudios[i].appendChild(youtubeAudioDuration[i]);
