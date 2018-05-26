@@ -115,7 +115,6 @@ function createStyle1Layout() {
 			youtubeAudioProgressBar[i].addEventListener("mouseleave", function(e){
 				var percent = Math.floor((100 / youtubePlayers[position].getDuration()) * youtubePlayers[position].getCurrentTime()) ;
 				youtubeAudioProgress[position].style.width = percent + "%";
-				alert("yea yea");
 			}, false);
 		}(i));
 		youtubeAudios[i].appendChild(youtubeAudioDuration[i]);
