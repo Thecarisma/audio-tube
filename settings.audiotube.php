@@ -154,7 +154,7 @@ class MySettingsPage
     public function support_callback()
     { 
 		printf(/
-				'<input type="button" value="Follow Author" target="_blank" onClick="openUrl('."'https://twitter.com/iamthecarisma'".')" />%s',
+				'<input type="button" value="Follow Author" target="_blank" onClick="openUrl('."\'https://twitter.com/iamthecarisma\'".')" />%s',
 				'<script>
 					function openUrl(url) {
 						var win = window.open(url, "_blank");
