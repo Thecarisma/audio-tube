@@ -70,9 +70,9 @@ $(window).bind("load", function() {
 		youtubeAudioRB[i] = rb ;
 		youtubeAudioRepeat[i] = false ;
 	}
-	if (playerStyle == 1) {
+	if (playerStyle == 'style_1') {
 		createStyle1Layout();
-	} else if (playerStyle == 2) {
+	} else if (playerStyle == 'style_2') {
 		createStyle2Layout();
 	}
 	onYouTubeIframeAPIReady();
