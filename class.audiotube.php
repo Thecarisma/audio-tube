@@ -55,7 +55,7 @@ class AudioTube {
 			var playerSkin = "'.self::$skin.'" ; 
 			var playerStyle = "'.self::$player_style.'" ; 
 		</script>' ;
-		#echo '<script src="https://www.youtube.com/player_api"></script>' ; 
+		echo '<script src="https://www.youtube.com/player_api"></script>' ; 
 
 		if ( self::$skin == 'classic' ) {
 			wp_register_style('audiotube-style', plugins_url('/css/classic-audiotube.php?'.time(),__FILE__ ));
