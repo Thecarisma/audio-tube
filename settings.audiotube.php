@@ -65,7 +65,7 @@ class AudioTubeSettings
 
         add_settings_section(
             'setting_section_id', 
-            'My Custom Settings', 
+            'Customize the AudioTube Plugin', 
             array( $this, 'print_section_info' ), 
             'audiotube_settings_admin' 
         );  
