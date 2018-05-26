@@ -80,8 +80,8 @@ class MySettingsPage
 
         add_settings_field(
             'chromic_skin', // ID
-            'Classic Skin', // Title 
-            array( $this, 'classic_skin_callback' ), // Callback
+            'Chromic Skin', // Title 
+            array( $this, 'chromic_skin_callback' ), // Callback
             'audiotube_settings_admin', // Page
             'setting_section_id' // Section           
         );    
