@@ -278,7 +278,6 @@ function onYouTubeIframeAPIReady() {
 			height: "0",
 			width: "0",
 			videoId: youtubeUrl[i],
-			host: 'http://www.youtube.com',
 			rel:"0",
 			events: {
 				"onReady" : function(e) {
