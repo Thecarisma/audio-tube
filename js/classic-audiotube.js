@@ -108,6 +108,7 @@ function createStyle1Layout() {
 					youtubeAudioPPB[position].src = pauseIcon ;
 				}
 			}; **/
+			youtubeAudioProgressBar[i].draggable = 'true' ;
 			youtubeAudioProgressBar[i].addEventListener("ondragstart", function(e){
 				e = e || window.event;
 				var dragX = e.pageX, dragY = e.pageY;
