@@ -153,13 +153,10 @@ class MySettingsPage
 	
     public function support_callback()
     { 
-		if (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] != 'chromic') ) 
-			printf(
-				'<input type="button" value="Follow Author" %s />',
+		printf(
+				'<input type="button" value="Follow Author" />',
 				(isset( $this->options['audiotube_skin_style']) && esc_attr( $this->options['audiotube_skin_style'] == 'style_2') ) ? 'checked="checked"' : ''
 			);
-		else 
-			print 'Chromic has only a single style' ;
     }
 }
 
