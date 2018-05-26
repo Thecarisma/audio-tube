@@ -126,7 +126,7 @@ class MySettingsPage
     public function classic_skin_callback()
     { 
         printf(
-            '<input type="radio" id="audiotube_skin" value="classic" name="audiotube_options[audiotube_skin]" %s />',
+            '<input style="display:flex;" type="radio" id="audiotube_skin" value="classic" name="audiotube_options[audiotube_skin]" %s />',
             (isset( $this->options['audiotube_skin']) && esc_attr( $this->options['audiotube_skin'] == 'classic') ) ? 'checked="checked"' : ''
         );
     }
