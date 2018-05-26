@@ -101,13 +101,13 @@ function createStyle1Layout() {
 		youtubeAudios[i].appendChild(youtubeAudioProgressBar[i]);
 		(function(i) {
 			var position = i ;
-			youtubeAudioProgressBar[i].onclick = function (e) {
+			/**youtubeAudioProgressBar[i].onclick = function (e) {
 				var percent = (e.offsetX / this.offsetWidth) * youtubePlayers[position].getDuration() ;
 				youtubePlayers[position].seekTo(percent);
 				if (youtubeAudioPPB[position].src.endsWith(playIcon) ) {
 					youtubeAudioPPB[position].src = pauseIcon ;
 				}
-			};
+			}; **/
 			youtubeAudioProgressBar[i].ondragover = function(evt) {
 				evt = evt || window.event;
 				var x = evt.pageX,
