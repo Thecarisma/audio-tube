@@ -109,11 +109,11 @@ function createStyle1Layout() {
 				}
 			};
 			youtubeAudioProgressBar[i].addEventListener("mousemove", function(e){
-				var percent = (e.offsetX / this.offsetWidth) * 100;//youtubePlayers[position].getDuration() ;
+				var percent = (e.offsetX / this.offsetWidth) * youtubePlayers[position].getDuration() ;
 				youtubeAudioProgress[position].style.width = percent + "%";
 			}, false);
 			youtubeAudioProgressBar[i].addEventListener("mouseleave", function(e){
-				var percent = Math.floor((100 / 100) * 22) ;
+				var percent = Math.floor((100 / youtubePlayers[position].getDuration()) * youtubePlayers[position].getCurrentTime()) ;
 				youtubeAudioProgress[position].style.width = percent + "%";
 				alert("yea yea");
 			}, false);
