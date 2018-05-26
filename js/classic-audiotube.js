@@ -284,7 +284,7 @@ function onYouTubeIframeAPIReady() {
 					var date = new Date(null); date.setSeconds(e.target.getDuration()); 
 					var audioDuration = date.toISOString().substr(11, 8);
 					youtubeAudioDuration[position].innerHTML = audioDuration ; 
-					initTimer(position);
+					initProgressTimer(position);
 				},
 				"onStateChange": function(e) {
 					var value = 0;
@@ -302,7 +302,10 @@ function onYouTubeIframeAPIReady() {
 	}
 }
 
-function initTimer(i) {
+/**
+	dynamically load the progress and time in timer
+**/
+function initProgressTimer(i) {
 	(function(i) {
 		var position = i ;
 		if(typeof youtubePlayers[position] != "undefined" ){
