@@ -139,6 +139,8 @@ class MySettingsPage
 				(isset( $this->options['audiotube_skin_style']) && esc_attr( $this->options['audiotube_skin_style'] == 'style_1') ) ? 'checked="checked"' : '',
 				(isset( $this->options['audiotube_skin_style']) && esc_attr( $this->options['audiotube_skin_style'] == 'style_2') ) ? 'checked="checked"' : ''
 			);
+		else 
+			print 'Chromic has only a single style' ;
     }
 }
 
