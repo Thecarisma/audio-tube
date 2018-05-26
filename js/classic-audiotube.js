@@ -108,6 +108,13 @@ function createStyle1Layout() {
 					youtubeAudioPPB[position].src = pauseIcon ;
 				}
 			};
+			youtubeAudioProgressBar[i].ondragover = function(evt) {
+				evt = evt || window.event;
+				var x = evt.pageX,
+					y = evt.pageY;
+
+				console.log(x, y);
+			};
 		}(i));
 		youtubeAudios[i].appendChild(youtubeAudioDuration[i]);
 		youtubeAudios[i].appendChild(youtubeAudioVB[i]);
