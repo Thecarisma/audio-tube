@@ -21,6 +21,9 @@ var youtubeAudioTimeSplash = [] ;
 $(window).bind("load", function() {	
 //$(window).load(function() {
 	youtubeAudioss = document.getElementsByClassName("audio-tube");
+	if (youtubeAudioss.length == 0) {
+		youtubeAudioss = document.getElementsByClassName("youtube-audio");
+	}
 	for(var i = 0; i < youtubeAudioss.length; i++)
 	{ 
 		youtubeAud = youtubeAudioss.item(i);
